@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Katz's Delicatessen",
+    "address": "205 East Houston Street, New York 10002",
+    "max_delivery_time_minutes": 43,
+    "accepts_10bis": true,
+    "lat": 40.7223277778,
+    "lng": -73.98735
+  },
+  {
+    "name": "Lombardi's Pizza",
+    "address": "32 Spring Street, New York 10012",
+    "max_delivery_time_minutes": 73,
+    "accepts_10bis": false,
+    "lat": 40.721675,
+    "lng": -73.9955888889
+  },
+  {
+    "name": "The Halal Guys",
+    "address": "6th Avenue & W 53rd Street, New York 10019",
+    "max_delivery_time_minutes": 34,
+    "accepts_10bis": false,
+    "lat": 40.7617884,
+    "lng": -73.9790839
+  },
+  {
+    "name": "Shake Shack",
+    "address": "Madison Square Park, 23rd & Madison, New York 10010",
+    "max_delivery_time_minutes": 44,
+    "accepts_10bis": false,
+    "lat": 40.7408681,
+    "lng": -73.9879841
+  },
+  {
+    "name": "Carmine's Italian Restaurant",
+    "address": "200 West 44th Street, btwn Broadway & 8th Avenue 10036",
+    "max_delivery_time_minutes": 75,
+    "accepts_10bis": true,
+    "lat": 40.7579,
+    "lng": -73.98757
+  },
+  {
+    "name": "Burger Joint",
+    "address": "Le Parker Meridien Hotel, 119 W 56th Street, New York 10019",
+    "max_delivery_time_minutes": 52,
+    "accepts_10bis": true,
+    "lat": 40.7641849,
+    "lng": -73.9784051
+  },
+  {
+    "name": "5 Napkin Burger",
+    "address": "630 9th Avenue, Hell'South Kitchen 10036",
+    "max_delivery_time_minutes": 57,
+    "accepts_10bis": true,
+    "lat": 40.75998,
+    "lng": -73.99138
+  },
+  {
+    "name": "Serendipity 3",
+    "address": "225 E 60th Street, New York 10022",
+    "max_delivery_time_minutes": 73,
+    "accepts_10bis": false,
+    "lat": 40.761899,
+    "lng": -73.964858
+  },
+  {
+    "name": "Balthazar",
+    "address": "80 Spring Street 10012",
+    "max_delivery_time_minutes": 105,
+    "accepts_10bis": true,
+    "lat": 40.72259,
+    "lng": -73.99805
+  },
+  {
+    "name": "Buddakan",
+    "address": "75 9th Avenue, New York 10011",
+    "max_delivery_time_minutes": 34,
+    "accepts_10bis": false,
+    "lat": 40.742232,
+    "lng": -74.0055112
+  },
+  {
+    "name": "Daniel",
+    "address": "60 East 65th Street., Upper East Side 10065",
+    "max_delivery_time_minutes": 33,
+    "accepts_10bis": true,
+    "lat": 40.76679,
+    "lng": -73.96795
+  },
+  {
+    "name": "Max Brenner",
+    "address": "841 Broadway, New York 10003",
+    "max_delivery_time_minutes": 73,
+    "accepts_10bis": true,
+    "lat": 40.7344138889,
+    "lng": -73.9914333333
+  },
+  {
+    "name": "Clinton Street Baking Company",
+    "address": "4 Clinton Street, New York 10002",
+    "max_delivery_time_minutes": 55,
+    "accepts_10bis": true,
+    "lat": 40.7212305556,
+    "lng": -73.9840694444
+  },
+  {
+    "name": "Momofuku Noodle Bar",
+    "address": "171 1st Avenue 10003",
+    "max_delivery_time_minutes": 48,
+    "accepts_10bis": false,
+    "lat": 40.7291,
+    "lng": -73.98432
+  },
+  {
+    "name": "Junior's Restaurant",
+    "address": "1515 Broadway--Between Broadway and 8th Avenue, Midtown - Times Square 10019",
+    "max_delivery_time_minutes": 68,
+    "accepts_10bis": true,
+    "lat": 40.75793,
+    "lng": -73.9864
+  },
+  {
+    "name": "Ippudo",
+    "address": "65 4th Avenue, New York 10003",
+    "max_delivery_time_minutes": 117,
+    "accepts_10bis": false,
+    "lat": 40.7307361111,
+    "lng": -73.9906833333
+  },
+  {
+    "name": "Babbo",
+    "address": "110 Waverly Pl, Greenwich Village 10011",
+    "max_delivery_time_minutes": 77,
+    "accepts_10bis": true,
+    "lat": 40.73228,
+    "lng": -73.99928
+  },
+  {
+    "name": "Eleven Madison Park",
+    "address": "11 Madison Avenue, New York 10010",
+    "max_delivery_time_minutes": 102,
+    "accepts_10bis": false,
+    "lat": 40.7415086,
+    "lng": -73.9866285
+  },
+  {
+    "name": "Tao",
+    "address": "42 E 58th Street, New York 10022",
+    "max_delivery_time_minutes": 84,
+    "accepts_10bis": false,
+    "lat": 40.7627111111,
+    "lng": -73.971375
+  },
+  {
+    "name": "Gramercy Tavern",
+    "address": "42 E 20th Street 10003",
+    "max_delivery_time_minutes": 118,
+    "accepts_10bis": true,
+    "lat": 40.7387166667,
+    "lng": -73.9883888889
+  },
+  {
+    "name": "Doughnut Plant",
+    "address": "220 Between 7th & 8th Avenue, W 23rd Street, New York 10011",
+    "max_delivery_time_minutes": 71,
+    "accepts_10bis": false,
+    "lat": 40.7446944444,
+    "lng": -73.9965666667
+  },
+  {
+    "name": "Doughnut Plant",
+    "address": "379 Grand Street, New York 10002",
+    "max_delivery_time_minutes": 34,
+    "accepts_10bis": false,
+    "lat": 40.71645,
+    "lng": -73.9885111111
+  },
+  {
+    "name": "Veselka",
+    "address": "144 2nd Avenue 10003",
+    "max_delivery_time_minutes": 37,
+    "accepts_10bis": true,
+    "lat": 40.72873,
+    "lng": -73.98708
+  },
+  {
+    "name": "Le Bernardin",
+    "address": "155 W 51st Street, New York 10019",
+    "max_delivery_time_minutes": 39,
+    "accepts_10bis": false,
+    "lat": 40.7608027778,
+    "lng": -73.9819194444
+  },
+  {
+    "name": "John's Pizza of Times Square",
+    "address": "260 W 44th Street, New York 10036",
+    "max_delivery_time_minutes": 35,
+    "accepts_10bis": false,
+    "lat": 40.7584111111,
+    "lng": -73.9882666667
+  },
+  {
+    "name": "Pommes Frites",
+    "address": "128 Macdougal Street, New York 10012",
+    "max_delivery_time_minutes": 48,
+    "accepts_10bis": true,
+    "lat": 40.730031,
+    "lng": -74.000162
+  },
+  {
+    "name": "Peter Luger Steak House",
+    "address": "178 Broadway, Brooklyn 11211",
+    "max_delivery_time_minutes": 108,
+    "accepts_10bis": false,
+    "lat": 40.7098777778,
+    "lng": -73.9623416667
+  },
+  {
+    "name": "S'MAC",
+    "address": "197 First Avenue, New York 10003",
+    "max_delivery_time_minutes": 68,
+    "accepts_10bis": false,
+    "lat": 40.7303694444,
+    "lng": -73.9840388889
+  },
+  {
+    "name": "Dominique Ansel Bakery",
+    "address": "189 Spring Street, New York 10012",
+    "max_delivery_time_minutes": 120,
+    "accepts_10bis": true,
+    "lat": 40.7250861111,
+    "lng": -74.0031138889
+  },
+  {
+    "name": "Per Se",
+    "address": "Time Warner Center, 10 Columbus Circle, 4th Floor, New York 10019",
+    "max_delivery_time_minutes": 68,
+    "accepts_10bis": false,
+    "lat": 40.7684141,
+    "lng": -73.9827037
+  },
+  {
+    "name": "Rosa Mexicano",
+    "address": "61 Columbus Avenue 10023",
+    "max_delivery_time_minutes": 98,
+    "accepts_10bis": false,
+    "lat": 40.77112,
+    "lng": -73.98336
+  },
+  {
+    "name": "Bagatelle",
+    "address": "1 Little W 12th Street, New York 10014",
+    "max_delivery_time_minutes": 111,
+    "accepts_10bis": false,
+    "lat": 40.7396,
+    "lng": -74.0062416667
+  },
+  {
+    "name": "Grimaldi's Pizzeria",
+    "address": "1 Front Street, Brooklyn 11201",
+    "max_delivery_time_minutes": 74,
+    "accepts_10bis": false,
+    "lat": 40.7025138889,
+    "lng": -73.9932722222
+  },
+  {
+    "name": "Russ & Daughters",
+    "address": "179 E Houston Street, New York 10002",
+    "max_delivery_time_minutes": 100,
+    "accepts_10bis": false,
+    "lat": 40.7227361111,
+    "lng": -73.9882361111
+  },
+  {
+    "name": "Momofuku Milk Bar",
+    "address": "251 East 13th Street, New York 10003",
+    "max_delivery_time_minutes": 30,
+    "accepts_10bis": false,
+    "lat": 40.7318805556,
+    "lng": -73.9858861111
+  },
+  {
+    "name": "Café Habana",
+    "address": "17 Prince Street, New York 10012",
+    "max_delivery_time_minutes": 67,
+    "accepts_10bis": true,
+    "lat": 40.722933,
+    "lng": -73.994193
+  },
+  {
+    "name": "Ayza Wine & Chocolate Bar",
+    "address": "11 West 31st Street, New York 10016",
+    "max_delivery_time_minutes": 49,
+    "accepts_10bis": false,
+    "lat": 40.7470083333,
+    "lng": -73.9870388889
+  },
+  {
+    "name": "Virgil's Real BBQ",
+    "address": "152 West 44th Street, btwn Broadway & 6th Avenue 10036",
+    "max_delivery_time_minutes": 81,
+    "accepts_10bis": true,
+    "lat": 40.75674,
+    "lng": -73.98518
+  },
+  {
+    "name": "Junoon",
+    "address": "27 West 24th Street, Flatiron district 10010",
+    "max_delivery_time_minutes": 75,
+    "accepts_10bis": true,
+    "lat": 40.74318,
+    "lng": -73.99083
+  },
+  {
+    "name": "Joe's Shanghai",
+    "address": "9 Pell Street 10013",
+    "max_delivery_time_minutes": 112,
+    "accepts_10bis": false,
+    "lat": 40.7146,
+    "lng": -73.99778
+  },
+  {
+    "name": "The Spotted Pig",
+    "address": "314 West 11th Street 10014",
+    "max_delivery_time_minutes": 118,
+    "accepts_10bis": true,
+    "lat": 40.73559,
+    "lng": -74.0065
+  },
+  {
+    "name": "Blue Smoke",
+    "address": "116 E 27th Street, New York 10016",
+    "max_delivery_time_minutes": 104,
+    "accepts_10bis": false,
+    "lat": 40.742241,
+    "lng": -73.983808
+  },
+  {
+    "name": "Becco",
+    "address": "355 West 46th Street, Theater District 10036",
+    "max_delivery_time_minutes": 94,
+    "accepts_10bis": true,
+    "lat": 40.76066,
+    "lng": -73.98943
+  },
+  {
+    "name": "Nobu",
+    "address": "105 Hudson Street 10013",
+    "max_delivery_time_minutes": 85,
+    "accepts_10bis": false,
+    "lat": 40.71952,
+    "lng": -74.00899
+  },
+  {
+    "name": "Shake Shack",
+    "address": "691 8th Avenue, New York 10036",
+    "max_delivery_time_minutes": 100,
+    "accepts_10bis": true,
+    "lat": 40.7587361111,
+    "lng": -73.9890138889
+  },
+  {
+    "name": "Morimoto",
+    "address": "88 10th Avenue, New York 10011",
+    "max_delivery_time_minutes": 111,
+    "accepts_10bis": false,
+    "lat": 40.743125,
+    "lng": -74.007261
+  },
+  {
+    "name": "La Esquina",
+    "address": "114 Kenmare Street, New York 10012",
+    "max_delivery_time_minutes": 51,
+    "accepts_10bis": false,
+    "lat": 40.7215,
+    "lng": -73.997825
+  },
+  {
+    "name": "John's of Bleecker Street",
+    "address": "278 Bleecker Street, New York 10014",
+    "max_delivery_time_minutes": 117,
+    "accepts_10bis": false,
+    "lat": 40.73175,
+    "lng": -74.0032583333
+  },
+  {
+    "name": "Shake Shack",
+    "address": "366 Columbus Avenue W 77th Street, New York 10024",
+    "max_delivery_time_minutes": 41,
+    "accepts_10bis": true,
+    "lat": 40.7807222222,
+    "lng": -73.9764944444
+  },
+  {
+    "name": "Locanda Verde",
+    "address": "377 Greenwich Street, New York 10013",
+    "max_delivery_time_minutes": 94,
+    "accepts_10bis": true,
+    "lat": 40.719768,
+    "lng": -74.010058
+  },
+  {
+    "name": "Jean-Georges",
+    "address": "1 Central Park West 10023",
+    "max_delivery_time_minutes": 77,
+    "accepts_10bis": false,
+    "lat": 40.76912,
+    "lng": -73.98159
+  },
+  {
+    "name": "The Meatball Shop",
+    "address": "84 Stanton Street, New York 10002",
+    "max_delivery_time_minutes": 99,
+    "accepts_10bis": true,
+    "lat": 40.7216138889,
+    "lng": -73.9888083333
+  },
+  {
+    "name": "Keens Steakhouse",
+    "address": "72 W 36th Street, New York 10018",
+    "max_delivery_time_minutes": 86,
+    "accepts_10bis": true,
+    "lat": 40.7508972222,
+    "lng": -73.9863805556
+  },
+  {
+    "name": "DBGB Kitchen & Bar",
+    "address": "299 Bowery, New York 10003",
+    "max_delivery_time_minutes": 87,
+    "accepts_10bis": false,
+    "lat": 40.72445,
+    "lng": -73.9923472222
+  },
+  {
+    "name": "Hill Country Barbecue Market",
+    "address": "30 West 26th Street 10010",
+    "max_delivery_time_minutes": 44,
+    "accepts_10bis": true,
+    "lat": 40.74416,
+    "lng": -73.99048
+  },
+  {
+    "name": "Roberta's",
+    "address": "261 Moore Street, Brooklyn 11206",
+    "max_delivery_time_minutes": 66,
+    "accepts_10bis": false,
+    "lat": 40.704893,
+    "lng": -73.934352
+  },
+  {
+    "name": "Bubby's",
+    "address": "120 Hudson Street, New York 10013",
+    "max_delivery_time_minutes": 53,
+    "accepts_10bis": true,
+    "lat": 40.7197444444,
+    "lng": -74.0084527778
+  },
+  {
+    "name": "Magnolia Bakery",
+    "address": "1240 Avenue of the Americas, New York 10020",
+    "max_delivery_time_minutes": 78,
+    "accepts_10bis": false,
+    "lat": 40.7598305556,
+    "lng": -73.9804305556
+  },
+  {
+    "name": "Gotham Bar and Grill",
+    "address": "12 E 12th Street, New York 10003",
+    "max_delivery_time_minutes": 32,
+    "accepts_10bis": true,
+    "lat": 40.7344027778,
+    "lng": -73.9935916667
+  },
+  {
+    "name": "Totto Ramen",
+    "address": "366 W 52nd Street, New York 10019",
+    "max_delivery_time_minutes": 57,
+    "accepts_10bis": false,
+    "lat": 40.7643888889,
+    "lng": -73.9875416667
+  },
+  {
+    "name": "Cafeteria",
+    "address": "119 7th Avenue 10011",
+    "max_delivery_time_minutes": 105,
+    "accepts_10bis": false,
+    "lat": 40.74071,
+    "lng": -73.998
+  },
+  {
+    "name": "Momofuku Ssam Bar",
+    "address": "207 2nd Avenue 10003",
+    "max_delivery_time_minutes": 73,
+    "accepts_10bis": true,
+    "lat": 40.73169,
+    "lng": -73.98585
+  },
+  {
+    "name": "Dinosaur Bar-B-Que",
+    "address": "700 W 125th Street, New York 10027",
+    "max_delivery_time_minutes": 54,
+    "accepts_10bis": false,
+    "lat": 40.8182972222,
+    "lng": -73.9607083333
+  },
+  {
+    "name": "Caracas Arepa Bar",
+    "address": "93 East 7th Street, New York 10009",
+    "max_delivery_time_minutes": 105,
+    "accepts_10bis": false,
+    "lat": 40.726875,
+    "lng": -73.9854138889
+  },
+  {
+    "name": "Rice To Riches",
+    "address": "37 Spring Street, New York 10012",
+    "max_delivery_time_minutes": 57,
+    "accepts_10bis": false,
+    "lat": 40.7218555556,
+    "lng": -73.9958027778
+  },
+  {
+    "name": "Otto Enoteca Pizzeria",
+    "address": "One Fifth Avenue at 8th Street, Greenwich Village 10003",
+    "max_delivery_time_minutes": 35,
+    "accepts_10bis": false,
+    "lat": 40.73182,
+    "lng": -73.99654
+  },
+  {
+    "name": "Sea Restaurant",
+    "address": "114 N 6th Street, Brooklyn 11249",
+    "max_delivery_time_minutes": 81,
+    "accepts_10bis": false,
+    "lat": 40.7182055556,
+    "lng": -73.9598388889
+  },
+  {
+    "name": "Bubba Gump Shrimp Co.",
+    "address": "1501 Broadway, New York 10036",
+    "max_delivery_time_minutes": 116,
+    "accepts_10bis": true,
+    "lat": 40.75704,
+    "lng": -73.98644
+  },
+  {
+    "name": "Del Posto",
+    "address": "85 10th Avenue, Chelsea 10011",
+    "max_delivery_time_minutes": 97,
+    "accepts_10bis": false,
+    "lat": 40.74307,
+    "lng": -74.00763
+  },
+  {
+    "name": "Levain Bakery",
+    "address": "167 W 74th Street, New York 10023",
+    "max_delivery_time_minutes": 38,
+    "accepts_10bis": false,
+    "lat": 40.779512,
+    "lng": -73.979726
+  },
+  {
+    "name": "Veniero's",
+    "address": "342 East 11th Street 10003",
+    "max_delivery_time_minutes": 117,
+    "accepts_10bis": true,
+    "lat": 40.72939,
+    "lng": -73.98454
+  },
+  {
+    "name": "Lupa Osteria Romana",
+    "address": "170 Thompson Street, New York 10012",
+    "max_delivery_time_minutes": 119,
+    "accepts_10bis": false,
+    "lat": 40.7276833333,
+    "lng": -74.0002972222
+  },
+  {
+    "name": "Blue Ribbon Brasserie",
+    "address": "97 Sullivan Street, New York 10012",
+    "max_delivery_time_minutes": 32,
+    "accepts_10bis": false,
+    "lat": 40.725525,
+    "lng": -74.0031444444
+  },
+  {
+    "name": "Union Square Cafe",
+    "address": "16th Street, New York 10003",
+    "max_delivery_time_minutes": 69,
+    "accepts_10bis": false,
+    "lat": 40.7369333333,
+    "lng": -73.9913472222
+  },
+  {
+    "name": "Magnolia Bakery",
+    "address": "401 Bleecker Street, New York 10014",
+    "max_delivery_time_minutes": 107,
+    "accepts_10bis": true,
+    "lat": 40.7358694444,
+    "lng": -74.0050805556
+  },
+  {
+    "name": "Ess-a-Bagel",
+    "address": "831 3rd Avenue 10022",
+    "max_delivery_time_minutes": 66,
+    "accepts_10bis": true,
+    "lat": 40.75616,
+    "lng": -73.97019
+  },
+  {
+    "name": "Gray's Papaya",
+    "address": "2090 Broadway, New York 10023",
+    "max_delivery_time_minutes": 45,
+    "accepts_10bis": true,
+    "lat": 40.7785805556,
+    "lng": -73.9816277778
+  },
+  {
+    "name": "ABC Kitchen",
+    "address": "35 E 18th Street, New York 10003",
+    "max_delivery_time_minutes": 111,
+    "accepts_10bis": false,
+    "lat": 40.7376444444,
+    "lng": -73.9897222222
+  },
+  {
+    "name": "Café Mogador",
+    "address": "101 Saint Marks Place, New York 10009",
+    "max_delivery_time_minutes": 52,
+    "accepts_10bis": false,
+    "lat": 40.7272416667,
+    "lng": -73.9845666667
+  },
+  {
+    "name": "Crif Dogs",
+    "address": "113 St Marks Place, New York 10009",
+    "max_delivery_time_minutes": 85,
+    "accepts_10bis": false,
+    "lat": 40.7269638889,
+    "lng": -73.9839861111
+  },
+  {
+    "name": "Ellen's Stardust Diner",
+    "address": "1650 Broadway, New York 10019",
+    "max_delivery_time_minutes": 94,
+    "accepts_10bis": false,
+    "lat": 40.7616722222,
+    "lng": -73.9835444444
+  },
+  {
+    "name": "Hard Rock Cafe",
+    "address": "1501 Broadway, New York 10036",
+    "max_delivery_time_minutes": 46,
+    "accepts_10bis": false,
+    "lat": 40.75704,
+    "lng": -73.98644
+  },
+  {
+    "name": "Artichoke Basille's Pizza",
+    "address": "328 East 14th Street, New York 10003",
+    "max_delivery_time_minutes": 113,
+    "accepts_10bis": false,
+    "lat": 40.7317166667,
+    "lng": -73.9838333333
+  },
+  {
+    "name": "Victor's Cafe",
+    "address": "236 West 52nd Street 10019",
+    "max_delivery_time_minutes": 113,
+    "accepts_10bis": true,
+    "lat": 40.76283,
+    "lng": -73.98373
+  },
+  {
+    "name": "Beauty & Essex",
+    "address": "146 Essex Street, Lower East Side 10002",
+    "max_delivery_time_minutes": 101,
+    "accepts_10bis": true,
+    "lat": 40.7205111111,
+    "lng": -73.9871444444
+  },
+  {
+    "name": "The Standard Grill",
+    "address": "The Standard High Line, 848 Washington Street, New York 10014",
+    "max_delivery_time_minutes": 49,
+    "accepts_10bis": false,
+    "lat": 40.7406388889,
+    "lng": -74.0078805556
+  },
+  {
+    "name": "Grand Central Oyster Bar & Restaurant",
+    "address": "Grand Central Terminal, 89 E 42nd Street, New York 10017",
+    "max_delivery_time_minutes": 114,
+    "accepts_10bis": true,
+    "lat": 40.753441,
+    "lng": -73.980785
+  },
+  {
+    "name": "The Breslin",
+    "address": "16 W 29th Street, New York 10001",
+    "max_delivery_time_minutes": 58,
+    "accepts_10bis": true,
+    "lat": 40.7460527778,
+    "lng": -73.9877166667
+  },
+  {
+    "name": "Cookshop",
+    "address": "156 10th Avenue 10011",
+    "max_delivery_time_minutes": 71,
+    "accepts_10bis": false,
+    "lat": 40.74565,
+    "lng": -74.00554
+  },
+  {
+    "name": "Stanton Social",
+    "address": "99 Stanton Street, New York 10002",
+    "max_delivery_time_minutes": 114,
+    "accepts_10bis": false,
+    "lat": 40.721194,
+    "lng": -73.988147
+  },
+  {
+    "name": "Corner Bistro",
+    "address": "331 W 4th Street, New York 10014",
+    "max_delivery_time_minutes": 80,
+    "accepts_10bis": true,
+    "lat": 40.7380055556,
+    "lng": -74.0038
+  },
+  {
+    "name": "Mamoun's Falafel",
+    "address": "119 MacDougal Street, New York 10012",
+    "max_delivery_time_minutes": 42,
+    "accepts_10bis": true,
+    "lat": 40.7303416667,
+    "lng": -74.0005416667
+  },
+  {
+    "name": "Churrascaria Plataforma",
+    "address": "316 West 49th Street, Midtown West 10019",
+    "max_delivery_time_minutes": 65,
+    "accepts_10bis": true,
+    "lat": 40.75366,
+    "lng": -73.96821
+  },
+  {
+    "name": "The Little Owl",
+    "address": "90 Bedford Street, Greenwich Village 10014",
+    "max_delivery_time_minutes": 57,
+    "accepts_10bis": false,
+    "lat": 40.7323,
+    "lng": -74.0052
+  },
+  {
+    "name": "Lobster Place",
+    "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+    "max_delivery_time_minutes": 74,
+    "accepts_10bis": true,
+    "lat": 40.742051,
+    "lng": -74.004821
+  },
+  {
+    "name": "230 Fifth",
+    "address": "230 5th Avenue, New York 10001",
+    "max_delivery_time_minutes": 63,
+    "accepts_10bis": true,
+    "lat": 40.743901,
+    "lng": -73.987848
+  },
+  {
+    "name": "Craft",
+    "address": "43 E 19th Street, New York 10003",
+    "max_delivery_time_minutes": 81,
+    "accepts_10bis": true,
+    "lat": 40.7379944444,
+    "lng": -73.9889138889
+  },
+  {
+    "name": "Marea",
+    "address": "240 Central Park South 10021",
+    "max_delivery_time_minutes": 31,
+    "accepts_10bis": true,
+    "lat": 40.76731,
+    "lng": -73.98116
+  },
+  {
+    "name": "Amy Ruth's",
+    "address": "113 W 116th Street, New York 10026",
+    "max_delivery_time_minutes": 77,
+    "accepts_10bis": true,
+    "lat": 40.8021777778,
+    "lng": -73.9504861111
+  },
+  {
+    "name": "Del Frisco's Double Eagle Steakhouse",
+    "address": "1221 6th Avenue 10020",
+    "max_delivery_time_minutes": 101,
+    "accepts_10bis": true,
+    "lat": 40.7348666667,
+    "lng": -73.9584416667
+  }
+]
