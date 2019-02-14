@@ -1,24 +1,15 @@
 import React, {Component, Fragment} from 'react';
-import axios from 'axios';
 import Restaurant from "./Resturant";
 
 class RestaurantList extends Component {
-  state = {
-    items: []
-  }
   componentDidMount() {
-    axios.get('api/v1/restaurants.json')
-      .then(response => {
-        this.setState({
-          items: response.data
-        })
-      })
-      .catch(error => console.log(error))
+    this.props.fetch()
   }
   render() {
+    const { data } = this.props
     return (
       <Fragment>
-        {this.state.items.map( (restaurant, index) => <Restaurant key={index} {...restaurant}/>)}
+        {data.map((restaurant, index) => <Restaurant key={index} {...restaurant}/>)}
       </Fragment>
     )
   }

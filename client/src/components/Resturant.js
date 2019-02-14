@@ -4,14 +4,21 @@ import {white} from "../theme";
 
 const Container = styled.div`
   background: ${white};
-  margin: 2rem 4rem;
-  
+  margin: 1rem 4rem;
+  padding: 1rem 2rem;
+  h3 {
+    margin: 0;
+  }
 `
 
-const Restaurant = ({name, rating}) =>
+const Restaurant = ({name, address, max_delivery_time, icon, accepts_10bis, rating}) =>
   <Container>
+    <img src={icon}/>
     <h3>{name}</h3>
-    Rating: {rating}
+    <p>Rating: {rating}</p>
+    <p>{address}</p>
+    <p>{max_delivery_time}</p>
+    <p>{accepts_10bis}</p>
   </Container>
 
 export default Restaurant;

@@ -15,37 +15,6 @@ ActiveRecord::Schema.define(version: 2019_02_12_094603) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "items", force: :cascade do |t|
-    t.integer "type"
-    t.string "name"
-    t.text "excerpt"
-    t.text "description"
-    t.string "url"
-    t.integer "upvotes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "list_items", force: :cascade do |t|
-    t.bigint "list_id"
-    t.bigint "item_id"
-    t.text "description"
-    t.integer "position"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_list_items_on_item_id"
-    t.index ["list_id"], name: "index_list_items_on_list_id"
-  end
-
-  create_table "lists", force: :cascade do |t|
-    t.string "title"
-    t.text "excerpt"
-    t.text "description"
-    t.integer "upvotes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
     t.integer "cuisine_id"
@@ -59,6 +28,4 @@ ActiveRecord::Schema.define(version: 2019_02_12_094603) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "list_items", "items"
-  add_foreign_key "list_items", "lists"
 end

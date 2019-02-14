@@ -1,73 +1,58 @@
-import React, { Component } from 'react'
+// @flow strict
+
+import * as React from 'react'
 import {Button, Modal} from 'antd';
 import RestaurantList from './components/RestaurantList'
-import styled from 'styled-components'
-// import logo from './logo.svg'
+import RestaurantForm from './components/RestaurantForm'
 import Map from "./components/Map"
-import {grey} from "./theme"
+import {Page, Header, Menu, Main, Footer} from './style'
 
-const Page = styled.div`
-  display: grid;
-  grid-template-areas: 
-        "header header"
-        "menu main"
-        "footer footer";
-  background-color: #fff;
-  color: #444;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr 5rem;
-`
+type Props = {
+  restaurants: Object
+};
 
-//background: url(${logo}) no-repeat;
-const Header = styled.div`
-  grid-area: header; 
-  text-align: center;
-  h1 {
-    font-size: 4rem;
-  }
-`
+type State = {
+  addRestaurantsVisible: boolean
+};
 
-const Menu = styled.div`
-  grid-area: menu;
-  background: ${grey}; 
-`
+class App extends React.Component<Props, State> {
 
-const Main = styled.div`
-  grid-area: main; 
- 
-`
-
-const Footer = styled.div`
-  grid-area: footer;
-  background: white;
-`
-
-class App extends Component {
   state = {
-    visible: false
+    addRestaurantsVisible: false
   }
-  openAddResturant = () => {
+
+  openAddRestaurant = () => {
     this.setState({
-      visible: true
+      addRestaurantsVisible: true
+    })
+  }
+
+  cancelAddRestaurant = () => {
+    this.setState({
+      addRestaurantsVisible: false
     })
   }
 
   render() {
+    const {
+      restaurants
+    } = this.props
+
     return (
       <Page>
         <Header>
             <h1>WeEat</h1>
-            <Button onClick={this.openAddResturant}>Add</Button>
-            <Modal footer={null} visible={this.state.visible}>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
+            <Button onClick={this.openAddRestaurant}>Add</Button>
+            <Modal footer={null}
+                   onCancel={this.cancelAddRestaurant}
+                   visible={this.state.addRestaurantsVisible}
+                   title="Add Restaurant">
+              <RestaurantForm onSave={restaurants.actions.add} />
             </Modal>
         </Header>
         <Menu>
-            <RestaurantList />
+            <RestaurantList data={restaurants.state.data}
+                            fetch={restaurants.actions.fetch}  />
         </Menu>
         <Main>
           <Map />
