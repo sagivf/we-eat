@@ -4,8 +4,11 @@ module Api::V1
 
     # GET /restaurants
     def index
-      @restaurants = Restaurant.all
-
+      @restaurants = Restaurant
+      if (params.has_key? :max_delivery_time_minutes)
+        @restaurants = @restaurants.where("max_delivery_time_minutes < ?", params[:max_delivery_time_minutes])
+      end
+      @restaurants = @restaurants.where(params.permit(:cuisine_id, :rating))
       render json: @restaurants, each_serializer: RestaurantSerializer
     end
 
@@ -54,3 +57,4 @@ module Api::V1
     end
   end
 end
+

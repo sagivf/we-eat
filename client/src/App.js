@@ -1,5 +1,3 @@
-// @flow strict
-
 import * as React from 'react'
 import moment from 'moment'
 import {Button, Input, Modal, Form} from 'antd';
@@ -67,6 +65,21 @@ const StyledLink = styled(Link)`
 
 class App extends React.Component<Props, State> {
 
+  state = {
+    filters: {
+      cuisine_id: null,
+      rating: null,
+      max_delivery_time_minutes: null
+    }
+  }
+
+  constructor(props){
+    super(props)
+    this.cuisineDropDownChange = this.query.bind(this, 'cuisine_id')
+    this.ratingDropDownChange = this.query.bind(this, 'rating')
+    this.speedDropDownChange = this.query.bind(this, 'max_delivery_time_minutes')
+  }
+
   componentDidMount() {
     this.props.cuisines.actions.fetch()
   }
@@ -77,6 +90,18 @@ class App extends React.Component<Props, State> {
 
   cancelRestaurantModal = () => {
     this.props.restaurants.actions.changeEditing(null)
+  }
+
+  query (type, value) {
+    this.setState(({filters, ...state}) => ({
+      ...state,
+      filters: {
+        ...filters,
+        [type]: value
+      }
+    }), () => {
+      this.props.restaurants.actions.fetch(this.state.filters)
+    })
   }
 
   render() {
@@ -106,13 +131,13 @@ class App extends React.Component<Props, State> {
         </Header>
         <Filters>
           <Form.Item label="Cuisine" hasFeedback>
-            <CuisineDropDown data={cuisines.state.data}/>
+            <CuisineDropDown data={cuisines.state.data} onChange={this.cuisineDropDownChange}/>
           </Form.Item>
           <Form.Item label="Rating">
-            <RatingDropDown />
+            <RatingDropDown onChange={this.ratingDropDownChange}/>
           </Form.Item>
           <Form.Item label="Speed">
-            <SpeedDropDown />
+            <SpeedDropDown onChange={this.speedDropDownChange}/>
           </Form.Item>
         </Filters>
         <Menu>

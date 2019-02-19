@@ -22,7 +22,7 @@ class Map extends PureComponent {
     if (!data.length) {
       return null
     }
-    const bounds = latLngBounds([data[0].lat, data[0].lng], [data[1].lat, data[1].lng])
+    const bounds = data[1] ? latLngBounds([data[0].lat, data[0].lng], [data[1].lat, data[1].lng]) : null
 
     return (
       <Container>

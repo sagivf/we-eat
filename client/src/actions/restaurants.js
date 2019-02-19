@@ -28,8 +28,8 @@ const updateRoute = id => `${route}/${id}`
 /*
  * action creators
  */
-export const fetch = () => (dispatch: Dispatch) =>  {
-  return axios.get(route)
+export const fetch = (params:Object) => (dispatch: Dispatch) =>  {
+  return axios.get(route, {params})
     .then(({data}) => dispatch({ type: FETCH_RESTAURANTS_SUCCESS, payload: data }))
     .catch(error => dispatch({ type: FETCH_RESTAURANTS_FAILED, error }))
 }
