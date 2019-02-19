@@ -1,0 +1,554 @@
+[
+  {
+    "name": "Afghani",
+    "icon": "I"
+  },
+  {
+    "name": "African",
+    "icon": "I"
+  },
+  {
+    "name": "American",
+    "icon": "I"
+  },
+  {
+    "name": "Amish",
+    "icon": "I"
+  },
+  {
+    "name": "Argentine",
+    "icon": "I"
+  },
+  {
+    "name": "Armenian",
+    "icon": "I"
+  },
+  {
+    "name": "Asian",
+    "icon": "I"
+  },
+  {
+    "name": "Australian",
+    "icon": "I"
+  },
+  {
+    "name": "Austrian",
+    "icon": "I"
+  },
+  {
+    "name": "BBQ",
+    "icon": "I"
+  },
+  {
+    "name": "Bagels",
+    "icon": "I"
+  },
+  {
+    "name": "Bakery",
+    "icon": "I"
+  },
+  {
+    "name": "Bar Food",
+    "icon": "I"
+  },
+  {
+    "name": "Belgian",
+    "icon": "I"
+  },
+  {
+    "name": "Beverages",
+    "icon": "I"
+  },
+  {
+    "name": "Brazilian",
+    "icon": "I"
+  },
+  {
+    "name": "Breakfast",
+    "icon": "I"
+  },
+  {
+    "name": "British",
+    "icon": "I"
+  },
+  {
+    "name": "Bubble Tea",
+    "icon": "I"
+  },
+  {
+    "name": "Burger",
+    "icon": "I"
+  },
+  {
+    "name": "Burmese",
+    "icon": "I"
+  },
+  {
+    "name": "Cafe",
+    "icon": "I"
+  },
+  {
+    "name": "Cajun",
+    "icon": "I"
+  },
+  {
+    "name": "California",
+    "icon": "I"
+  },
+  {
+    "name": "Cambodian",
+    "icon": "I"
+  },
+  {
+    "name": "Canadian",
+    "icon": "I"
+  },
+  {
+    "name": "Cantonese",
+    "icon": "I"
+  },
+  {
+    "name": "Caribbean",
+    "icon": "I"
+  },
+  {
+    "name": "Central Asian",
+    "icon": "I"
+  },
+  {
+    "name": "Chilean",
+    "icon": "I"
+  },
+  {
+    "name": "Chinese",
+    "icon": "I"
+  },
+  {
+    "name": "Coffee and Tea",
+    "icon": "I"
+  },
+  {
+    "name": "Colombian",
+    "icon": "I"
+  },
+  {
+    "name": "Creole",
+    "icon": "I"
+  },
+  {
+    "name": "Crepes",
+    "icon": "I"
+  },
+  {
+    "name": "Cuban",
+    "icon": "I"
+  },
+  {
+    "name": "Danish",
+    "icon": "I"
+  },
+  {
+    "name": "Deli",
+    "icon": "I"
+  },
+  {
+    "name": "Desserts",
+    "icon": "I"
+  },
+  {
+    "name": "Dim Sum",
+    "icon": "I"
+  },
+  {
+    "name": "Diner",
+    "icon": "I"
+  },
+  {
+    "name": "Dominican",
+    "icon": "I"
+  },
+  {
+    "name": "Donuts",
+    "icon": "I"
+  },
+  {
+    "name": "Drinks Only",
+    "icon": "I"
+  },
+  {
+    "name": "Eastern European",
+    "icon": "I"
+  },
+  {
+    "name": "Ecuadorian",
+    "icon": "I"
+  },
+  {
+    "name": "Ethiopian",
+    "icon": "I"
+  },
+  {
+    "name": "European",
+    "icon": "I"
+  },
+  {
+    "name": "Fast Food",
+    "icon": "I"
+  },
+  {
+    "name": "Filipino",
+    "icon": "I"
+  },
+  {
+    "name": "Fish and Chips",
+    "icon": "I"
+  },
+  {
+    "name": "Fondue",
+    "icon": "I"
+  },
+  {
+    "name": "French",
+    "icon": "I"
+  },
+  {
+    "name": "Frozen Yogurt",
+    "icon": "I"
+  },
+  {
+    "name": "Fusion",
+    "icon": "I"
+  },
+  {
+    "name": "Georgian",
+    "icon": "I"
+  },
+  {
+    "name": "German",
+    "icon": "I"
+  },
+  {
+    "name": "Greek",
+    "icon": "I"
+  },
+  {
+    "name": "Hawaiian",
+    "icon": "I"
+  },
+  {
+    "name": "Healthy Food",
+    "icon": "I"
+  },
+  {
+    "name": "Hungarian",
+    "icon": "I"
+  },
+  {
+    "name": "Ice Cream",
+    "icon": "I"
+  },
+  {
+    "name": "Indian",
+    "icon": "I"
+  },
+  {
+    "name": "Indonesian",
+    "icon": "I"
+  },
+  {
+    "name": "International",
+    "icon": "I"
+  },
+  {
+    "name": "Iranian",
+    "icon": "I"
+  },
+  {
+    "name": "Irish",
+    "icon": "I"
+  },
+  {
+    "name": "Israeli",
+    "icon": "I"
+  },
+  {
+    "name": "Italian",
+    "icon": "I"
+  },
+  {
+    "name": "Jamaican",
+    "icon": "I"
+  },
+  {
+    "name": "Japanese",
+    "icon": "I"
+  },
+  {
+    "name": "Jewish",
+    "icon": "I"
+  },
+  {
+    "name": "Juices",
+    "icon": "I"
+  },
+  {
+    "name": "Kebab",
+    "icon": "I"
+  },
+  {
+    "name": "Korean",
+    "icon": "I"
+  },
+  {
+    "name": "Laotian",
+    "icon": "I"
+  },
+  {
+    "name": "Latin American",
+    "icon": "I"
+  },
+  {
+    "name": "Lebanese",
+    "icon": "I"
+  },
+  {
+    "name": "Malaysian",
+    "icon": "I"
+  },
+  {
+    "name": "Mediterranean",
+    "icon": "I"
+  },
+  {
+    "name": "Mexican",
+    "icon": "I"
+  },
+  {
+    "name": "Middle Eastern",
+    "icon": "I"
+  },
+  {
+    "name": "Mongolian",
+    "icon": "I"
+  },
+  {
+    "name": "Moroccan",
+    "icon": "I"
+  },
+  {
+    "name": "Mughlai",
+    "icon": "I"
+  },
+  {
+    "name": "Nepalese",
+    "icon": "I"
+  },
+  {
+    "name": "New American",
+    "icon": "I"
+  },
+  {
+    "name": "New Mexican",
+    "icon": "I"
+  },
+  {
+    "name": "New Zealand",
+    "icon": "I"
+  },
+  {
+    "name": "Nicaraguan",
+    "icon": "I"
+  },
+  {
+    "name": "Pacific",
+    "icon": "I"
+  },
+  {
+    "name": "Pacific Northwest",
+    "icon": "I"
+  },
+  {
+    "name": "Pakistani",
+    "icon": "I"
+  },
+  {
+    "name": "Patisserie",
+    "icon": "I"
+  },
+  {
+    "name": "Peruvian",
+    "icon": "I"
+  },
+  {
+    "name": "Pizza",
+    "icon": "I"
+  },
+  {
+    "name": "Po'Boys",
+    "icon": "I"
+  },
+  {
+    "name": "Polish",
+    "icon": "I"
+  },
+  {
+    "name": "Portuguese",
+    "icon": "I"
+  },
+  {
+    "name": "Pub Food",
+    "icon": "I"
+  },
+  {
+    "name": "Puerto Rican",
+    "icon": "I"
+  },
+  {
+    "name": "Ramen",
+    "icon": "I"
+  },
+  {
+    "name": "Russian",
+    "icon": "I"
+  },
+  {
+    "name": "Salad",
+    "icon": "I"
+  },
+  {
+    "name": "Salvadorean",
+    "icon": "I"
+  },
+  {
+    "name": "Sandwich",
+    "icon": "I"
+  },
+  {
+    "name": "Scandinavian",
+    "icon": "I"
+  },
+  {
+    "name": "Scottish",
+    "icon": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+  },
+  {
+    "name": "Seafood",
+    "icon": "I"
+  },
+  {
+    "name": "Sichuan",
+    "icon": "I"
+  },
+  {
+    "name": "Singaporean",
+    "icon": "I"
+  },
+  {
+    "name": "Somali",
+    "icon": "I"
+  },
+  {
+    "name": "Soul Food",
+    "icon": "I"
+  },
+  {
+    "name": "South African",
+    "icon": "I"
+  },
+  {
+    "name": "South American",
+    "icon": "I"
+  },
+  {
+    "name": "Southern",
+    "icon": "I"
+  },
+  {
+    "name": "Southwestern",
+    "icon": "I"
+  },
+  {
+    "name": "Spanish",
+    "icon": "I"
+  },
+  {
+    "name": "Sri Lankan",
+    "icon": "I"
+  },
+  {
+    "name": "Steak",
+    "icon": "I"
+  },
+  {
+    "name": "Sushi",
+    "icon": "I"
+  },
+  {
+    "name": "Swedish",
+    "icon": "I"
+  },
+  {
+    "name": "Taco",
+    "icon": "I"
+  },
+  {
+    "name": "Taiwanese",
+    "icon": "I"
+  },
+  {
+    "name": "Tapas",
+    "icon": "I"
+  },
+  {
+    "name": "Tea",
+    "icon": "I"
+  },
+  {
+    "name": "Teriyaki",
+    "icon": "I"
+  },
+  {
+    "name": "Tex-Mex",
+    "icon": "I"
+  },
+  {
+    "name": "Thai",
+    "icon": "I"
+  },
+  {
+    "name": "Tibetan",
+    "icon": "I"
+  },
+  {
+    "name": "Tunisian",
+    "icon": "I"
+  },
+  {
+    "name": "Turkish",
+    "icon": "I"
+  },
+  {
+    "name": "Ukrainian",
+    "icon": "I"
+  },
+  {
+    "name": "Uruguayan",
+    "icon": "I"
+  },
+  {
+    "name": "Vegetarian",
+    "icon": "I"
+  },
+  {
+    "name": "Venezuelan",
+    "icon": "I"
+  },
+  {
+    "name": "Vietnamese",
+    "icon": "I"
+  },
+  {
+    "name": "Welsh",
+    "icon": "I󠁧󠁢󠁷󠁬󠁳󠁿"
+  }
+]

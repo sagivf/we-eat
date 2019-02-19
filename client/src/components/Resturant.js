@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import {white} from "../theme";
+import {white, red} from "../theme";
+import star from "../style/star.svg";
 
 const Container = styled.div`
   background: ${white};
@@ -9,24 +10,51 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
   * {
     margin: 0 1rem;
   }
+  
   h3 {
     margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover {
+      font-weight: 600;
+      cursor: pointer;      
+    }
+  }
+  
+  p {
+    margin: 0;
+  } 
+  
+  .cuisine-icon {
+    font-size: 3rem;
+    color: ${red};
+  }
+  
+  img {
+    width: 1rem;
+    display: inline-block;
+    margin: 0 2px 2px 0;
   }
 `
 
-const Restaurant = ({name, address, max_delivery_time, icon, accepts_10bis, rating}) =>
+const Name = styled.span`
+  margin: 0 0.6rem 0 0;
+`
+
+const Restaurant = ({id, name, address, cuisine: { icon }, rating, onEdit}) =>
   <Container>
-    {/*<img src={icon}/>*/}
-    <span className="cuisine-icon" style={{color: '#86b3bb'}}>I</span>
+    <span className="cuisine-icon">{icon}</span>
     <div>
-        <h3>{name}</h3>
-        <p>Rating: {rating}</p>
+        <h3 onClick={() => onEdit(id)}>
+            <Name>{name}</Name>
+            {Array.from({length: rating}).map((key, index) => <img alt="" key={index} src={star} />)}
+        </h3>
         <p>{address}</p>
-        <p>{max_delivery_time}</p>
-        <p>{accepts_10bis}</p>
     </div>
   </Container>
 

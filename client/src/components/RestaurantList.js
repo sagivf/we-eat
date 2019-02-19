@@ -6,10 +6,10 @@ class RestaurantList extends Component {
     this.props.fetch()
   }
   render() {
-    const { data } = this.props
+    const { data, onEdit } = this.props
     return (
       <Fragment>
-        {data.map((restaurant, index) => <Restaurant key={index} {...restaurant}/>)}
+        {data.map((restaurant, index) => <Restaurant key={index} {...restaurant} onEdit={onEdit}/>)}
       </Fragment>
     )
   }

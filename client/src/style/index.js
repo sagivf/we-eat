@@ -1,6 +1,16 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import logo from './pizza.png'
-import {grey} from "../theme";
+import {grey, red} from "../theme";
+
+const form = css`
+  .ant-form-item-label {
+    line-height: 2;
+    margin-top: -1rem;
+    label {
+      color: white;
+    }
+  }
+`
 
 export const Page = styled.div`
   display: grid;
@@ -18,6 +28,8 @@ export const Page = styled.div`
 `
 
 export const Header = styled.div`
+  ${form};
+
   grid-area: header; 
   text-align: center;
   background: url(${logo}) no-repeat;
@@ -25,10 +37,14 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   h1 {
     color: white;
     font-size: 5rem;
     margin: 0;
+    font-weight:700;
+    text-shadow: 0 0 1px #000;
+    line-height: 1;
   }
   
   button {
@@ -36,25 +52,32 @@ export const Header = styled.div`
     right: 2rem;
     top: 2rem;
   }
+  
+  p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem;
+    font-weight:400;
+    text-shadow: 0 0 1px #000;
+  }
+  
+  .ant-form-item {
+    width: 40rem;
+  }
 `
 
 export const Filters = styled.div`
+  ${form};
+  
   grid-area: filters;
   display: flex;
-  background: #8d0000;
+  background: ${red};
   justify-content: center;
   align-items: center;
   > * {
     flex: 0 0 20%;
     margin: 1rem;
     color: white;
-  }
-  
-  .ant-form-item-label {   
-    line-height: 1;
-    label {
-      color: white;
-    }
   }
 `
 
@@ -71,17 +94,15 @@ export const Main = styled.div`
 
 export const Footer = styled.div`
   grid-area: footer;
-  background: black;
+  background: #2d343a;
   color: white;
-  font-size: 2rem;
   display: flex;
+  justify-content: center;
   align-items: center;
-  * {
-    margin: 0 1rem 0 0;
+  font-size: 1rem;
+
+  img {
+    width: 2.4rem;
+    margin: 1rem 1rem 1rem 16rem;
   }
-  h5 {
-    color: white;
-    font-size: 1.4rem;
-    margin: 0 auto 0 1rem;
-  } 
 `

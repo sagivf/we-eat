@@ -11,8 +11,13 @@ import * as serviceWorker from './serviceWorker'
 import app from './reducers/'
 import {
   fetch as fetchRestaurants,
-  add as  addRestaurants
+  add as addRestaurants,
+  update as updateRestaurants,
+  changeEdit as changeRestaurantsEdit
 } from './actions/restaurants'
+import {
+  fetch as fetchCuisines
+} from './actions/cuisines'
 
 const store = createStore(
   app,
@@ -23,14 +28,27 @@ const mapDispatchToProps = dispatch => {
   return {
     restaurants: {
       fetch: () => dispatch(fetchRestaurants()),
-      add: id => dispatch(addRestaurants(id))
+      onSave: (oldValue, newValue) => {
+        if (!oldValue.id && newValue) {
+          dispatch(addRestaurants(newValue))
+        }
+        else {
+          dispatch(updateRestaurants(oldValue.id, newValue))
+        }
+      },
+      update: (id, data) => dispatch(updateRestaurants(id, data)),
+      changeEditing: item => dispatch(changeRestaurantsEdit(item)),
+    },
+    cuisines: {
+      fetch: () => dispatch(fetchCuisines())
     }
   }
 }
 
 const mapStateToProps = state => {
   return {
-    restaurants: state.restaurants
+    restaurants: state.restaurants,
+    cuisines: state.cuisines
   }
 }
 
@@ -38,6 +56,10 @@ const mergeProps = (state, dispatch) => ({
   restaurants: {
     actions: dispatch.restaurants,
     state: state.restaurants
+  },
+  cuisines: {
+    actions: dispatch.cuisines,
+    state: state.cuisines
   }
 })
 

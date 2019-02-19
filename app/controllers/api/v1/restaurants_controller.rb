@@ -6,7 +6,7 @@ module Api::V1
     def index
       @restaurants = Restaurant.all
 
-      render json: @restaurants
+      render json: @restaurants, each_serializer: RestaurantSerializer
     end
 
     # GET /restaurants/1
@@ -48,7 +48,9 @@ module Api::V1
 
     # Only allow a trusted parameter "white list" through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :rating, :address)
+      tp = params.require(:restaurant).permit(:name, :rating, :address, :lat, :lng, :max_delivery_time_minutes, :accepts_10bis)
+      tp[:cuisine_id] = params[:cuisine]
+      tp
     end
   end
 end
