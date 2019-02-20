@@ -5,7 +5,8 @@
     "max_delivery_time_minutes": 43,
     "accepts_10bis": true,
     "lat": 40.7223277778,
-    "lng": -73.98735
+    "lng": -73.98735,
+    "cuisine_id": 5
   },
   {
     "name": "Lombardi's Pizza",
@@ -13,7 +14,8 @@
     "max_delivery_time_minutes": 73,
     "accepts_10bis": false,
     "lat": 40.721675,
-    "lng": -73.9955888889
+    "lng": -73.9955888889,
+    "cuisine_id": 5
   },
   {
     "name": "The Halal Guys",
@@ -21,7 +23,8 @@
     "max_delivery_time_minutes": 34,
     "accepts_10bis": false,
     "lat": 40.7617884,
-    "lng": -73.9790839
+    "lng": -73.9790839,
+    "cuisine_id": 5
   },
   {
     "name": "Shake Shack",
@@ -29,7 +32,8 @@
     "max_delivery_time_minutes": 44,
     "accepts_10bis": false,
     "lat": 40.7408681,
-    "lng": -73.9879841
+    "lng": -73.9879841,
+    "cuisine_id": 5
   },
   {
     "name": "Carmine's Italian Restaurant",
@@ -37,7 +41,8 @@
     "max_delivery_time_minutes": 75,
     "accepts_10bis": true,
     "lat": 40.7579,
-    "lng": -73.98757
+    "lng": -73.98757,
+    "cuisine_id": 5
   },
   {
     "name": "Burger Joint",
@@ -45,7 +50,8 @@
     "max_delivery_time_minutes": 52,
     "accepts_10bis": true,
     "lat": 40.7641849,
-    "lng": -73.9784051
+    "lng": -73.9784051,
+    "cuisine_id": 5
   },
   {
     "name": "5 Napkin Burger",
@@ -53,7 +59,8 @@
     "max_delivery_time_minutes": 57,
     "accepts_10bis": true,
     "lat": 40.75998,
-    "lng": -73.99138
+    "lng": -73.99138,
+    "cuisine_id": 5
   },
   {
     "name": "Serendipity 3",
@@ -61,7 +68,8 @@
     "max_delivery_time_minutes": 73,
     "accepts_10bis": false,
     "lat": 40.761899,
-    "lng": -73.964858
+    "lng": -73.964858,
+    "cuisine_id": 5
   },
   {
     "name": "Balthazar",
@@ -69,7 +77,8 @@
     "max_delivery_time_minutes": 105,
     "accepts_10bis": true,
     "lat": 40.72259,
-    "lng": -73.99805
+    "lng": -73.99805,
+    "cuisine_id": 5
   },
   {
     "name": "Buddakan",
@@ -77,7 +86,8 @@
     "max_delivery_time_minutes": 34,
     "accepts_10bis": false,
     "lat": 40.742232,
-    "lng": -74.0055112
+    "lng": -74.0055112,
+    "cuisine_id": 5
   },
   {
     "name": "Daniel",
@@ -85,7 +95,8 @@
     "max_delivery_time_minutes": 33,
     "accepts_10bis": true,
     "lat": 40.76679,
-    "lng": -73.96795
+    "lng": -73.96795,
+    "cuisine_id": 5
   },
   {
     "name": "Max Brenner",
@@ -93,7 +104,8 @@
     "max_delivery_time_minutes": 73,
     "accepts_10bis": true,
     "lat": 40.7344138889,
-    "lng": -73.9914333333
+    "lng": -73.9914333333,
+    "cuisine_id": 5
   },
   {
     "name": "Clinton Street Baking Company",
@@ -101,7 +113,8 @@
     "max_delivery_time_minutes": 55,
     "accepts_10bis": true,
     "lat": 40.7212305556,
-    "lng": -73.9840694444
+    "lng": -73.9840694444,
+    "cuisine_id": 5
   },
   {
     "name": "Momofuku Noodle Bar",
@@ -109,7 +122,8 @@
     "max_delivery_time_minutes": 48,
     "accepts_10bis": false,
     "lat": 40.7291,
-    "lng": -73.98432
+    "lng": -73.98432,
+    "cuisine_id": 5
   },
   {
     "name": "Junior's Restaurant",
@@ -117,7 +131,8 @@
     "max_delivery_time_minutes": 68,
     "accepts_10bis": true,
     "lat": 40.75793,
-    "lng": -73.9864
+    "lng": -73.9864,
+    "cuisine_id": 5
   },
   {
     "name": "Ippudo",
@@ -125,7 +140,8 @@
     "max_delivery_time_minutes": 117,
     "accepts_10bis": false,
     "lat": 40.7307361111,
-    "lng": -73.9906833333
+    "lng": -73.9906833333,
+    "cuisine_id": 5
   },
   {
     "name": "Babbo",
@@ -133,7 +149,8 @@
     "max_delivery_time_minutes": 77,
     "accepts_10bis": true,
     "lat": 40.73228,
-    "lng": -73.99928
+    "lng": -73.99928,
+    "cuisine_id": 5
   },
   {
     "name": "Eleven Madison Park",
@@ -141,7 +158,8 @@
     "max_delivery_time_minutes": 102,
     "accepts_10bis": false,
     "lat": 40.7415086,
-    "lng": -73.9866285
+    "lng": -73.9866285,
+    "cuisine_id": 5
   },
   {
     "name": "Tao",
@@ -149,7 +167,8 @@
     "max_delivery_time_minutes": 84,
     "accepts_10bis": false,
     "lat": 40.7627111111,
-    "lng": -73.971375
+    "lng": -73.971375,
+    "cuisine_id": 5
   },
   {
     "name": "Gramercy Tavern",
@@ -157,7 +176,8 @@
     "max_delivery_time_minutes": 118,
     "accepts_10bis": true,
     "lat": 40.7387166667,
-    "lng": -73.9883888889
+    "lng": -73.9883888889,
+    "cuisine_id": 5
   },
   {
     "name": "Doughnut Plant",
@@ -165,7 +185,8 @@
     "max_delivery_time_minutes": 71,
     "accepts_10bis": false,
     "lat": 40.7446944444,
-    "lng": -73.9965666667
+    "lng": -73.9965666667,
+    "cuisine_id": 5
   },
   {
     "name": "Doughnut Plant",
@@ -173,7 +194,8 @@
     "max_delivery_time_minutes": 34,
     "accepts_10bis": false,
     "lat": 40.71645,
-    "lng": -73.9885111111
+    "lng": -73.9885111111,
+    "cuisine_id": 5
   },
   {
     "name": "Veselka",
@@ -181,7 +203,8 @@
     "max_delivery_time_minutes": 37,
     "accepts_10bis": true,
     "lat": 40.72873,
-    "lng": -73.98708
+    "lng": -73.98708,
+    "cuisine_id": 5
   },
   {
     "name": "Le Bernardin",
@@ -189,7 +212,8 @@
     "max_delivery_time_minutes": 39,
     "accepts_10bis": false,
     "lat": 40.7608027778,
-    "lng": -73.9819194444
+    "lng": -73.9819194444,
+    "cuisine_id": 5
   },
   {
     "name": "John's Pizza of Times Square",
@@ -197,7 +221,8 @@
     "max_delivery_time_minutes": 35,
     "accepts_10bis": false,
     "lat": 40.7584111111,
-    "lng": -73.9882666667
+    "lng": -73.9882666667,
+    "cuisine_id": 5
   },
   {
     "name": "Pommes Frites",
@@ -205,7 +230,8 @@
     "max_delivery_time_minutes": 48,
     "accepts_10bis": true,
     "lat": 40.730031,
-    "lng": -74.000162
+    "lng": -74.000162,
+    "cuisine_id": 5
   },
   {
     "name": "Peter Luger Steak House",
@@ -213,7 +239,8 @@
     "max_delivery_time_minutes": 108,
     "accepts_10bis": false,
     "lat": 40.7098777778,
-    "lng": -73.9623416667
+    "lng": -73.9623416667,
+    "cuisine_id": 5
   },
   {
     "name": "S'MAC",
@@ -221,7 +248,8 @@
     "max_delivery_time_minutes": 68,
     "accepts_10bis": false,
     "lat": 40.7303694444,
-    "lng": -73.9840388889
+    "lng": -73.9840388889,
+    "cuisine_id": 5
   },
   {
     "name": "Dominique Ansel Bakery",
@@ -229,7 +257,8 @@
     "max_delivery_time_minutes": 120,
     "accepts_10bis": true,
     "lat": 40.7250861111,
-    "lng": -74.0031138889
+    "lng": -74.0031138889,
+    "cuisine_id": 5
   },
   {
     "name": "Per Se",
@@ -237,7 +266,8 @@
     "max_delivery_time_minutes": 68,
     "accepts_10bis": false,
     "lat": 40.7684141,
-    "lng": -73.9827037
+    "lng": -73.9827037,
+    "cuisine_id": 5
   },
   {
     "name": "Rosa Mexicano",
@@ -245,7 +275,8 @@
     "max_delivery_time_minutes": 98,
     "accepts_10bis": false,
     "lat": 40.77112,
-    "lng": -73.98336
+    "lng": -73.98336,
+    "cuisine_id": 5
   },
   {
     "name": "Bagatelle",
@@ -253,7 +284,8 @@
     "max_delivery_time_minutes": 111,
     "accepts_10bis": false,
     "lat": 40.7396,
-    "lng": -74.0062416667
+    "lng": -74.0062416667,
+    "cuisine_id": 5
   },
   {
     "name": "Grimaldi's Pizzeria",
@@ -261,7 +293,8 @@
     "max_delivery_time_minutes": 74,
     "accepts_10bis": false,
     "lat": 40.7025138889,
-    "lng": -73.9932722222
+    "lng": -73.9932722222,
+    "cuisine_id": 5
   },
   {
     "name": "Russ & Daughters",
@@ -269,7 +302,8 @@
     "max_delivery_time_minutes": 100,
     "accepts_10bis": false,
     "lat": 40.7227361111,
-    "lng": -73.9882361111
+    "lng": -73.9882361111,
+    "cuisine_id": 5
   },
   {
     "name": "Momofuku Milk Bar",
@@ -277,7 +311,8 @@
     "max_delivery_time_minutes": 30,
     "accepts_10bis": false,
     "lat": 40.7318805556,
-    "lng": -73.9858861111
+    "lng": -73.9858861111,
+    "cuisine_id": 5
   },
   {
     "name": "Café Habana",
@@ -285,7 +320,8 @@
     "max_delivery_time_minutes": 67,
     "accepts_10bis": true,
     "lat": 40.722933,
-    "lng": -73.994193
+    "lng": -73.994193,
+    "cuisine_id": 5
   },
   {
     "name": "Ayza Wine & Chocolate Bar",
@@ -293,7 +329,8 @@
     "max_delivery_time_minutes": 49,
     "accepts_10bis": false,
     "lat": 40.7470083333,
-    "lng": -73.9870388889
+    "lng": -73.9870388889,
+    "cuisine_id": 5
   },
   {
     "name": "Virgil's Real BBQ",
@@ -301,7 +338,8 @@
     "max_delivery_time_minutes": 81,
     "accepts_10bis": true,
     "lat": 40.75674,
-    "lng": -73.98518
+    "lng": -73.98518,
+    "cuisine_id": 5
   },
   {
     "name": "Junoon",
@@ -309,7 +347,8 @@
     "max_delivery_time_minutes": 75,
     "accepts_10bis": true,
     "lat": 40.74318,
-    "lng": -73.99083
+    "lng": -73.99083,
+    "cuisine_id": 5
   },
   {
     "name": "Joe's Shanghai",
@@ -317,7 +356,8 @@
     "max_delivery_time_minutes": 112,
     "accepts_10bis": false,
     "lat": 40.7146,
-    "lng": -73.99778
+    "lng": -73.99778,
+    "cuisine_id": 5
   },
   {
     "name": "The Spotted Pig",
@@ -325,7 +365,8 @@
     "max_delivery_time_minutes": 118,
     "accepts_10bis": true,
     "lat": 40.73559,
-    "lng": -74.0065
+    "lng": -74.0065,
+    "cuisine_id": 5
   },
   {
     "name": "Blue Smoke",
@@ -333,7 +374,8 @@
     "max_delivery_time_minutes": 104,
     "accepts_10bis": false,
     "lat": 40.742241,
-    "lng": -73.983808
+    "lng": -73.983808,
+    "cuisine_id": 5
   },
   {
     "name": "Becco",
@@ -341,7 +383,8 @@
     "max_delivery_time_minutes": 94,
     "accepts_10bis": true,
     "lat": 40.76066,
-    "lng": -73.98943
+    "lng": -73.98943,
+    "cuisine_id": 5
   },
   {
     "name": "Nobu",
@@ -349,7 +392,8 @@
     "max_delivery_time_minutes": 85,
     "accepts_10bis": false,
     "lat": 40.71952,
-    "lng": -74.00899
+    "lng": -74.00899,
+    "cuisine_id": 5
   },
   {
     "name": "Shake Shack",
@@ -357,7 +401,8 @@
     "max_delivery_time_minutes": 100,
     "accepts_10bis": true,
     "lat": 40.7587361111,
-    "lng": -73.9890138889
+    "lng": -73.9890138889,
+    "cuisine_id": 5
   },
   {
     "name": "Morimoto",
@@ -365,7 +410,8 @@
     "max_delivery_time_minutes": 111,
     "accepts_10bis": false,
     "lat": 40.743125,
-    "lng": -74.007261
+    "lng": -74.007261,
+    "cuisine_id": 5
   },
   {
     "name": "La Esquina",
@@ -373,7 +419,8 @@
     "max_delivery_time_minutes": 51,
     "accepts_10bis": false,
     "lat": 40.7215,
-    "lng": -73.997825
+    "lng": -73.997825,
+    "cuisine_id": 5
   },
   {
     "name": "John's of Bleecker Street",
@@ -381,7 +428,8 @@
     "max_delivery_time_minutes": 117,
     "accepts_10bis": false,
     "lat": 40.73175,
-    "lng": -74.0032583333
+    "lng": -74.0032583333,
+    "cuisine_id": 5
   },
   {
     "name": "Shake Shack",
@@ -389,7 +437,8 @@
     "max_delivery_time_minutes": 41,
     "accepts_10bis": true,
     "lat": 40.7807222222,
-    "lng": -73.9764944444
+    "lng": -73.9764944444,
+    "cuisine_id": 5
   },
   {
     "name": "Locanda Verde",
@@ -397,7 +446,8 @@
     "max_delivery_time_minutes": 94,
     "accepts_10bis": true,
     "lat": 40.719768,
-    "lng": -74.010058
+    "lng": -74.010058,
+    "cuisine_id": 5
   },
   {
     "name": "Jean-Georges",
@@ -405,7 +455,8 @@
     "max_delivery_time_minutes": 77,
     "accepts_10bis": false,
     "lat": 40.76912,
-    "lng": -73.98159
+    "lng": -73.98159,
+    "cuisine_id": 5
   },
   {
     "name": "The Meatball Shop",
@@ -413,7 +464,8 @@
     "max_delivery_time_minutes": 99,
     "accepts_10bis": true,
     "lat": 40.7216138889,
-    "lng": -73.9888083333
+    "lng": -73.9888083333,
+    "cuisine_id": 5
   },
   {
     "name": "Keens Steakhouse",
@@ -421,7 +473,8 @@
     "max_delivery_time_minutes": 86,
     "accepts_10bis": true,
     "lat": 40.7508972222,
-    "lng": -73.9863805556
+    "lng": -73.9863805556,
+    "cuisine_id": 5
   },
   {
     "name": "DBGB Kitchen & Bar",
@@ -429,7 +482,8 @@
     "max_delivery_time_minutes": 87,
     "accepts_10bis": false,
     "lat": 40.72445,
-    "lng": -73.9923472222
+    "lng": -73.9923472222,
+    "cuisine_id": 5
   },
   {
     "name": "Hill Country Barbecue Market",
@@ -437,7 +491,8 @@
     "max_delivery_time_minutes": 44,
     "accepts_10bis": true,
     "lat": 40.74416,
-    "lng": -73.99048
+    "lng": -73.99048,
+    "cuisine_id": 5
   },
   {
     "name": "Roberta's",
@@ -445,7 +500,8 @@
     "max_delivery_time_minutes": 66,
     "accepts_10bis": false,
     "lat": 40.704893,
-    "lng": -73.934352
+    "lng": -73.934352,
+    "cuisine_id": 5
   },
   {
     "name": "Bubby's",
@@ -453,7 +509,8 @@
     "max_delivery_time_minutes": 53,
     "accepts_10bis": true,
     "lat": 40.7197444444,
-    "lng": -74.0084527778
+    "lng": -74.0084527778,
+    "cuisine_id": 5
   },
   {
     "name": "Magnolia Bakery",
@@ -461,7 +518,8 @@
     "max_delivery_time_minutes": 78,
     "accepts_10bis": false,
     "lat": 40.7598305556,
-    "lng": -73.9804305556
+    "lng": -73.9804305556,
+    "cuisine_id": 5
   },
   {
     "name": "Gotham Bar and Grill",
@@ -469,7 +527,8 @@
     "max_delivery_time_minutes": 32,
     "accepts_10bis": true,
     "lat": 40.7344027778,
-    "lng": -73.9935916667
+    "lng": -73.9935916667,
+    "cuisine_id": 5
   },
   {
     "name": "Totto Ramen",
@@ -477,7 +536,8 @@
     "max_delivery_time_minutes": 57,
     "accepts_10bis": false,
     "lat": 40.7643888889,
-    "lng": -73.9875416667
+    "lng": -73.9875416667,
+    "cuisine_id": 5
   },
   {
     "name": "Cafeteria",
@@ -485,7 +545,8 @@
     "max_delivery_time_minutes": 105,
     "accepts_10bis": false,
     "lat": 40.74071,
-    "lng": -73.998
+    "lng": -73.998,
+    "cuisine_id": 5
   },
   {
     "name": "Momofuku Ssam Bar",
@@ -493,7 +554,8 @@
     "max_delivery_time_minutes": 73,
     "accepts_10bis": true,
     "lat": 40.73169,
-    "lng": -73.98585
+    "lng": -73.98585,
+    "cuisine_id": 5
   },
   {
     "name": "Dinosaur Bar-B-Que",
@@ -501,7 +563,8 @@
     "max_delivery_time_minutes": 54,
     "accepts_10bis": false,
     "lat": 40.8182972222,
-    "lng": -73.9607083333
+    "lng": -73.9607083333,
+    "cuisine_id": 5
   },
   {
     "name": "Caracas Arepa Bar",
@@ -509,7 +572,8 @@
     "max_delivery_time_minutes": 105,
     "accepts_10bis": false,
     "lat": 40.726875,
-    "lng": -73.9854138889
+    "lng": -73.9854138889,
+    "cuisine_id": 5
   },
   {
     "name": "Rice To Riches",
@@ -517,7 +581,8 @@
     "max_delivery_time_minutes": 57,
     "accepts_10bis": false,
     "lat": 40.7218555556,
-    "lng": -73.9958027778
+    "lng": -73.9958027778,
+    "cuisine_id": 5
   },
   {
     "name": "Otto Enoteca Pizzeria",
@@ -525,7 +590,8 @@
     "max_delivery_time_minutes": 35,
     "accepts_10bis": false,
     "lat": 40.73182,
-    "lng": -73.99654
+    "lng": -73.99654,
+    "cuisine_id": 5
   },
   {
     "name": "Sea Restaurant",
@@ -533,7 +599,8 @@
     "max_delivery_time_minutes": 81,
     "accepts_10bis": false,
     "lat": 40.7182055556,
-    "lng": -73.9598388889
+    "lng": -73.9598388889,
+    "cuisine_id": 5
   },
   {
     "name": "Bubba Gump Shrimp Co.",
@@ -541,7 +608,8 @@
     "max_delivery_time_minutes": 116,
     "accepts_10bis": true,
     "lat": 40.75704,
-    "lng": -73.98644
+    "lng": -73.98644,
+    "cuisine_id": 5
   },
   {
     "name": "Del Posto",
@@ -549,7 +617,8 @@
     "max_delivery_time_minutes": 97,
     "accepts_10bis": false,
     "lat": 40.74307,
-    "lng": -74.00763
+    "lng": -74.00763,
+    "cuisine_id": 5
   },
   {
     "name": "Levain Bakery",
@@ -557,7 +626,8 @@
     "max_delivery_time_minutes": 38,
     "accepts_10bis": false,
     "lat": 40.779512,
-    "lng": -73.979726
+    "lng": -73.979726,
+    "cuisine_id": 5
   },
   {
     "name": "Veniero's",
@@ -565,7 +635,8 @@
     "max_delivery_time_minutes": 117,
     "accepts_10bis": true,
     "lat": 40.72939,
-    "lng": -73.98454
+    "lng": -73.98454,
+    "cuisine_id": 5
   },
   {
     "name": "Lupa Osteria Romana",
@@ -573,7 +644,8 @@
     "max_delivery_time_minutes": 119,
     "accepts_10bis": false,
     "lat": 40.7276833333,
-    "lng": -74.0002972222
+    "lng": -74.0002972222,
+    "cuisine_id": 5
   },
   {
     "name": "Blue Ribbon Brasserie",
@@ -581,7 +653,8 @@
     "max_delivery_time_minutes": 32,
     "accepts_10bis": false,
     "lat": 40.725525,
-    "lng": -74.0031444444
+    "lng": -74.0031444444,
+    "cuisine_id": 5
   },
   {
     "name": "Union Square Cafe",
@@ -589,7 +662,8 @@
     "max_delivery_time_minutes": 69,
     "accepts_10bis": false,
     "lat": 40.7369333333,
-    "lng": -73.9913472222
+    "lng": -73.9913472222,
+    "cuisine_id": 5
   },
   {
     "name": "Magnolia Bakery",
@@ -597,7 +671,8 @@
     "max_delivery_time_minutes": 107,
     "accepts_10bis": true,
     "lat": 40.7358694444,
-    "lng": -74.0050805556
+    "lng": -74.0050805556,
+    "cuisine_id": 5
   },
   {
     "name": "Ess-a-Bagel",
@@ -605,7 +680,8 @@
     "max_delivery_time_minutes": 66,
     "accepts_10bis": true,
     "lat": 40.75616,
-    "lng": -73.97019
+    "lng": -73.97019,
+    "cuisine_id": 5
   },
   {
     "name": "Gray's Papaya",
@@ -613,7 +689,8 @@
     "max_delivery_time_minutes": 45,
     "accepts_10bis": true,
     "lat": 40.7785805556,
-    "lng": -73.9816277778
+    "lng": -73.9816277778,
+    "cuisine_id": 5
   },
   {
     "name": "ABC Kitchen",
@@ -621,7 +698,8 @@
     "max_delivery_time_minutes": 111,
     "accepts_10bis": false,
     "lat": 40.7376444444,
-    "lng": -73.9897222222
+    "lng": -73.9897222222,
+    "cuisine_id": 5
   },
   {
     "name": "Café Mogador",
@@ -629,7 +707,8 @@
     "max_delivery_time_minutes": 52,
     "accepts_10bis": false,
     "lat": 40.7272416667,
-    "lng": -73.9845666667
+    "lng": -73.9845666667,
+    "cuisine_id": 5
   },
   {
     "name": "Crif Dogs",
@@ -637,7 +716,8 @@
     "max_delivery_time_minutes": 85,
     "accepts_10bis": false,
     "lat": 40.7269638889,
-    "lng": -73.9839861111
+    "lng": -73.9839861111,
+    "cuisine_id": 5
   },
   {
     "name": "Ellen's Stardust Diner",
@@ -645,7 +725,8 @@
     "max_delivery_time_minutes": 94,
     "accepts_10bis": false,
     "lat": 40.7616722222,
-    "lng": -73.9835444444
+    "lng": -73.9835444444,
+    "cuisine_id": 5
   },
   {
     "name": "Hard Rock Cafe",
@@ -653,7 +734,8 @@
     "max_delivery_time_minutes": 46,
     "accepts_10bis": false,
     "lat": 40.75704,
-    "lng": -73.98644
+    "lng": -73.98644,
+    "cuisine_id": 5
   },
   {
     "name": "Artichoke Basille's Pizza",
@@ -661,7 +743,8 @@
     "max_delivery_time_minutes": 113,
     "accepts_10bis": false,
     "lat": 40.7317166667,
-    "lng": -73.9838333333
+    "lng": -73.9838333333,
+    "cuisine_id": 5
   },
   {
     "name": "Victor's Cafe",
@@ -669,7 +752,8 @@
     "max_delivery_time_minutes": 113,
     "accepts_10bis": true,
     "lat": 40.76283,
-    "lng": -73.98373
+    "lng": -73.98373,
+    "cuisine_id": 5
   },
   {
     "name": "Beauty & Essex",
@@ -677,7 +761,8 @@
     "max_delivery_time_minutes": 101,
     "accepts_10bis": true,
     "lat": 40.7205111111,
-    "lng": -73.9871444444
+    "lng": -73.9871444444,
+    "cuisine_id": 5
   },
   {
     "name": "The Standard Grill",
@@ -685,7 +770,8 @@
     "max_delivery_time_minutes": 49,
     "accepts_10bis": false,
     "lat": 40.7406388889,
-    "lng": -74.0078805556
+    "lng": -74.0078805556,
+    "cuisine_id": 5
   },
   {
     "name": "Grand Central Oyster Bar & Restaurant",
@@ -693,7 +779,8 @@
     "max_delivery_time_minutes": 114,
     "accepts_10bis": true,
     "lat": 40.753441,
-    "lng": -73.980785
+    "lng": -73.980785,
+    "cuisine_id": 5
   },
   {
     "name": "The Breslin",
@@ -701,7 +788,8 @@
     "max_delivery_time_minutes": 58,
     "accepts_10bis": true,
     "lat": 40.7460527778,
-    "lng": -73.9877166667
+    "lng": -73.9877166667,
+    "cuisine_id": 5
   },
   {
     "name": "Cookshop",
@@ -709,7 +797,8 @@
     "max_delivery_time_minutes": 71,
     "accepts_10bis": false,
     "lat": 40.74565,
-    "lng": -74.00554
+    "lng": -74.00554,
+    "cuisine_id": 5
   },
   {
     "name": "Stanton Social",
@@ -717,7 +806,8 @@
     "max_delivery_time_minutes": 114,
     "accepts_10bis": false,
     "lat": 40.721194,
-    "lng": -73.988147
+    "lng": -73.988147,
+    "cuisine_id": 5
   },
   {
     "name": "Corner Bistro",
@@ -725,7 +815,8 @@
     "max_delivery_time_minutes": 80,
     "accepts_10bis": true,
     "lat": 40.7380055556,
-    "lng": -74.0038
+    "lng": -74.0038,
+    "cuisine_id": 5
   },
   {
     "name": "Mamoun's Falafel",
@@ -733,7 +824,8 @@
     "max_delivery_time_minutes": 42,
     "accepts_10bis": true,
     "lat": 40.7303416667,
-    "lng": -74.0005416667
+    "lng": -74.0005416667,
+    "cuisine_id": 5
   },
   {
     "name": "Churrascaria Plataforma",
@@ -741,7 +833,8 @@
     "max_delivery_time_minutes": 65,
     "accepts_10bis": true,
     "lat": 40.75366,
-    "lng": -73.96821
+    "lng": -73.96821,
+    "cuisine_id": 5
   },
   {
     "name": "The Little Owl",
@@ -749,7 +842,8 @@
     "max_delivery_time_minutes": 57,
     "accepts_10bis": false,
     "lat": 40.7323,
-    "lng": -74.0052
+    "lng": -74.0052,
+    "cuisine_id": 5
   },
   {
     "name": "Lobster Place",
@@ -757,7 +851,8 @@
     "max_delivery_time_minutes": 74,
     "accepts_10bis": true,
     "lat": 40.742051,
-    "lng": -74.004821
+    "lng": -74.004821,
+    "cuisine_id": 5
   },
   {
     "name": "230 Fifth",
@@ -765,7 +860,8 @@
     "max_delivery_time_minutes": 63,
     "accepts_10bis": true,
     "lat": 40.743901,
-    "lng": -73.987848
+    "lng": -73.987848,
+    "cuisine_id": 5
   },
   {
     "name": "Craft",
@@ -773,7 +869,8 @@
     "max_delivery_time_minutes": 81,
     "accepts_10bis": true,
     "lat": 40.7379944444,
-    "lng": -73.9889138889
+    "lng": -73.9889138889,
+    "cuisine_id": 5
   },
   {
     "name": "Marea",
@@ -781,7 +878,8 @@
     "max_delivery_time_minutes": 31,
     "accepts_10bis": true,
     "lat": 40.76731,
-    "lng": -73.98116
+    "lng": -73.98116,
+    "cuisine_id": 5
   },
   {
     "name": "Amy Ruth's",
@@ -789,7 +887,8 @@
     "max_delivery_time_minutes": 77,
     "accepts_10bis": true,
     "lat": 40.8021777778,
-    "lng": -73.9504861111
+    "lng": -73.9504861111,
+    "cuisine_id": 5
   },
   {
     "name": "Del Frisco's Double Eagle Steakhouse",
@@ -797,6 +896,7 @@
     "max_delivery_time_minutes": 101,
     "accepts_10bis": true,
     "lat": 40.7348666667,
-    "lng": -73.9584416667
+    "lng": -73.9584416667,
+    "cuisine_id": 5
   }
 ]
