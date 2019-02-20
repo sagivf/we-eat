@@ -83,7 +83,6 @@ class App extends React.Component<Props, State> {
   }
 
   searchChange = event => {
-    debugger;
     this.searchByName(event.target.value)
   }
 
