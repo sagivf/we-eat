@@ -1,17 +1,22 @@
-import {
-  FETCH_CUISINES_SUCCESS
-} from '../actions/cuisines'
+// @flow strict
 
-export default function cuisines(state = {
+import { CUISINE_ACTION_TYPES } from '../actions/cuisines'
+import type { Action } from '../actions/cuisines'
+
+type State = {
+  data: Array<any>
+}
+
+export default function cuisines(state: State = {
   data: []
-}, action) {
-  const {type, data} = action
+}, action: Action) {
+  const {type, payload} = action
 
   switch (type) {
-    case FETCH_CUISINES_SUCCESS:
+    case CUISINE_ACTION_TYPES.FETCH_CUISINES_SUCCESS:
       return {
         ...state,
-        data
+        data: payload
       }
     default:
       return state

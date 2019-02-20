@@ -1,15 +1,18 @@
+// @flow strict
+
 import * as React from 'react'
 import moment from 'moment'
 import {Button, Input, Modal, Form} from 'antd';
 import RestaurantList from './components/RestaurantList'
 import RestaurantForm from './components/RestaurantForm'
 import Map from "./components/Map"
-import {Page, Header, Menu, Main, Footer, Filters} from './style'
+import {
+  GlobalStyle, Page, Header, Menu, Main, Footer,
+  Link, Filters
+} from './style'
 import CuisineDropDown from "./components/select/CuisineDropDown";
-import {createGlobalStyle} from "styled-components";
 import SpeedDropDown from "./components/select/SpeedDropDown";
 import RatingDropDown from "./components/select/RatingDropDown";
-import styled from 'styled-components'
 import weLogo from './style/welogo_white.png'
 
 type Props = {
@@ -18,52 +21,16 @@ type Props = {
 };
 
 type State = {
+  filters: {}
 };
 
 const Search = Input.Search;
 
-const GlobalStyle = createGlobalStyle`
-  .cuisine-drop-down-item{
-    .ant-select-dropdown-menu-item {
-      display: flex;
-      align-items: center;
-      .cuisine-icon {
-        font-size: 2rem;
-      }  
-      span {
-        margin: 1rem;
-      }
-  
-      img {
-        width: 1rem;
-      }
-    }
-  }
-  
-  .ant-input {
-    padding: 1.2rem 0.8rem;
-  }
-`
-
-const Link = ({href, children, className}) => <span className={className}><a rel="noopener noreferrer" href={href} target="_blank">{children}</a></span>
-const StyledLink = styled(Link)`
-  margin-left: 0.4rem;
-   &:before {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-    content: " · ";
-  }
-  
-  a {
-    color: #E8BD36;
-    font-weight: 300;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`
-
 class App extends React.Component<Props, State> {
+  searchByName: Function;
+  cuisineDropDownChange: Function;
+  ratingDropDownChange: Function;
+  speedDropDownChange: Function;
 
   state = {
     filters: {
@@ -74,7 +41,7 @@ class App extends React.Component<Props, State> {
     }
   }
 
-  constructor(props){
+  constructor(props: Props){
     super(props)
     this.searchByName = this.query.bind(this, 'name')
     this.cuisineDropDownChange = this.query.bind(this, 'cuisine_id')
@@ -82,7 +49,7 @@ class App extends React.Component<Props, State> {
     this.speedDropDownChange = this.query.bind(this, 'max_delivery_time_minutes')
   }
 
-  searchChange = event => {
+  searchChange = (event: any) => {
     this.searchByName(event.target.value)
   }
 
@@ -98,7 +65,7 @@ class App extends React.Component<Props, State> {
     this.props.restaurants.actions.changeEditing(null)
   }
 
-  query (type, value) {
+  query (type: string, value: any) {
     this.setState(({filters, ...state}) => ({
       ...state,
       filters: {
@@ -156,9 +123,9 @@ class App extends React.Component<Props, State> {
         </Main>
         <Footer>
           <span>© 2010–2019 WeWork Inc.</span>
-          <StyledLink href="https://github.com/sagivf/we-eat">Github Code</StyledLink>
-          <StyledLink href="https://connect.we.co/display/DIGI/WeEat+-+Training+Project">Connect Spec</StyledLink>
-          <StyledLink href="https://www.linkedin.com/in/sagivf/">Developed By me</StyledLink>
+          <Link href="https://github.com/sagivf/we-eat">Github Code</Link>
+          <Link href="https://connect.we.co/display/DIGI/WeEat+-+Training+Project">Connect Spec</Link>
+          <Link href="https://www.linkedin.com/in/sagivf/">Developed By me</Link>
           <img alt="" src={weLogo} />
           <span>Powered By<br/>We Technology</span>
         </Footer>

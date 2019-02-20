@@ -1,7 +1,9 @@
+// @flow strict
+
 import React, {Component, Fragment} from 'react';
 import Restaurant from "./Resturant";
 
-class RestaurantList extends Component {
+class RestaurantList extends Component<any, any> {
   componentDidMount() {
     this.props.fetch()
   }

@@ -1,29 +1,26 @@
 // @flow strict
 
-import axios from "axios";
+import axios from "axios"
 
-
-type State = {}
-type Action = { +type: string };
-type GetState = () => State;
-type Dispatch = (action: Action | ThunkAction | PromiseAction) => any;
-type ThunkAction = (dispatch: Dispatch, getState: GetState) => any;
-type PromiseAction = Promise<Action>;
-
+const route = 'api/v1/cuisines'
 
 /*
  * action types
  */
-export const FETCH_CUISINES_SUCCESS = 'FETCH_CUISINES_SUCCESS'
-export const FETCH_CUISINES_FAILED = 'FETCH_CUISINES_FAILED'
+export const CUISINE_ACTION_TYPES = {
+  FETCH_CUISINES_SUCCESS: 'FETCH_CUISINES_SUCCESS',
+  FETCH_CUISINES_FAILED: 'FETCH_CUISINES_FAILED'
+}
 
-const route = 'api/v1/cuisines'
+
+export type Action = { type: $Keys<typeof CUISINE_ACTION_TYPES>, payload?: any, error?: Error }
+type Dispatch = (action: Action) => any;
 
 /*
  * action creators
  */
 export const fetch = () => (dispatch: Dispatch) =>  {
   return axios.get(route)
-    .then(({data}) => dispatch({ type: FETCH_CUISINES_SUCCESS, data }))
-    .catch(error => dispatch({ type: FETCH_CUISINES_FAILED, error }))
+    .then(({data}) => dispatch({ type: CUISINE_ACTION_TYPES.FETCH_CUISINES_SUCCESS, payload: data }))
+    .catch(error => dispatch({ type: CUISINE_ACTION_TYPES.FETCH_CUISINES_FAILED, error }))
 }

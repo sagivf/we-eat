@@ -1,39 +1,28 @@
-import React, {Component} from 'react';
-import {Select} from "antd";
-import styled from 'styled-components'
+// @flow strict
 
-const { Option } = Select
+import React, {Fragment} from 'react';
+import {css} from 'styled-components'
+import DropDown from './base'
 const placeHolder = "Hamburger, Asian, Salads..."
 
-const Drop = styled(Select)`
-  .ant-select-selection-selected-value {
-    display: flex !important;
-    width: 100%;
-    justify-content: center;    
-  }
-  
+const extraStyle = css`
   .cuisine-icon {
     font-size: 2rem;
     margin-right: 1rem;
   }
 `
 
-class CuisineDropDown extends Component {
-  render() {
-    return (
-      <Drop dropdownClassName="cuisine-drop-down-item"
-            dropdownMatchSelectWidth={true}
-            allowClear={true}
-            {...this.props}
-            size="large"
-            style={{ width: '100%' }} placeholder={placeHolder}>
-        {this.props.data.map(cuisine =>
-          <Option key={cuisine.id} value={cuisine.id}>
-            <span className="cuisine-icon">{cuisine.icon}</span>
-            {cuisine.name}
-          </Option>)}
-      </Drop>
-    )
-  }
-}
+const CuisineDropDown = ({data, ...props}: any) =>
+  <DropDown {...props}
+            extraStyle={extraStyle}
+            placeholder={placeHolder}
+            options={data.map(cuisine => ({
+            value: cuisine.id,
+            body: <Fragment>
+              <span className="cuisine-icon">{cuisine.icon}</span>
+              {cuisine.name}
+            </Fragment>
+          }))}>
+  </DropDown>
+
 export default CuisineDropDown;
