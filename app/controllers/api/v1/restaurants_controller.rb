@@ -8,6 +8,9 @@ module Api::V1
       if (params.has_key? :max_delivery_time_minutes)
         @restaurants = @restaurants.where("max_delivery_time_minutes < ?", params[:max_delivery_time_minutes])
       end
+      if (params.has_key? :name)
+        @restaurants = @restaurants.where("name like ?", "%#{params[:name]}%")
+      end
       @restaurants = @restaurants.where(params.permit(:cuisine_id, :rating))
       render json: @restaurants, each_serializer: RestaurantSerializer
     end

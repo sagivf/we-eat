@@ -67,6 +67,7 @@ class App extends React.Component<Props, State> {
 
   state = {
     filters: {
+      name: null,
       cuisine_id: null,
       rating: null,
       max_delivery_time_minutes: null
@@ -75,9 +76,15 @@ class App extends React.Component<Props, State> {
 
   constructor(props){
     super(props)
+    this.searchByName = this.query.bind(this, 'name')
     this.cuisineDropDownChange = this.query.bind(this, 'cuisine_id')
     this.ratingDropDownChange = this.query.bind(this, 'rating')
     this.speedDropDownChange = this.query.bind(this, 'max_delivery_time_minutes')
+  }
+
+  searchChange = event => {
+    debugger;
+    this.searchByName(event.target.value)
   }
 
   componentDidMount() {
@@ -117,7 +124,7 @@ class App extends React.Component<Props, State> {
             <h1>WeEat</h1>
             <p>It's {moment().format('HH:mm')} and you're hungry.</p>
             <Form.Item>
-              <Search placeholder="Find a restaurant" size="large"/>
+              <Search placeholder="Find a restaurant" size="large" onChange={this.searchChange}/>
             </Form.Item>
             <Button shape="circle" icon="plus" size="large" onClick={this.openRestaurantModal}/>
             <Modal footer={null}
