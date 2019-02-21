@@ -27,7 +27,7 @@ const store = createStore(
 const mapDispatchToProps = dispatch => {
   return {
     restaurants: {
-      fetch: () => dispatch(fetchRestaurants()),
+      fetch: params => dispatch(fetchRestaurants(params)),
       onSave: (oldValue, newValue) => {
         if (!oldValue.id && newValue) {
           dispatch(addRestaurants(newValue))

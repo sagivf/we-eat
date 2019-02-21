@@ -28,8 +28,9 @@ const Drop = styled(Select)`
 class RatingDropDown extends Component {
   render() {
     return (
-      <Drop dropdownMatchSelectWidth={true}
-            dropdownClassName="cuisine-drop-down-item"
+      <Drop dropdownClassName="cuisine-drop-down-item"
+            dropdownMatchSelectWidth={true}
+            allowClear={true}
             {...this.props}
             size="large"
             style={{ width: '100%' }} placeholder={placeHolder}>

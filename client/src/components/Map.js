@@ -17,16 +17,25 @@ class Map extends PureComponent {
   state = {
     zoom: 13
   }
-  render() {
+  calcBounds() {
     const {data} = this.props;
-    if (!data.length) {
-      return null
+    const bounds = []
+    if (data[0]) {
+      bounds.push([data[0].lat, data[0].lng])
     }
-    const bounds = latLngBounds([data[0].lat, data[0].lng], [data[1].lat, data[1].lng])
+    if (data[1]) {
+      bounds.push([data[1].lat, data[1].lng])
+    }
+    return bounds
+  }
+  render() {
+    const {data} = this.props
+    const bounds = this.calcBounds()
 
     return (
       <Container>
-        <LeafLetMap bounds={bounds} zoom={this.state.zoom}>
+        <LeafLetMap bounds={bounds.length > 1 ? latLngBounds(bounds) : null}
+                    center={bounds.length === 1 ? bounds[0] : null}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
