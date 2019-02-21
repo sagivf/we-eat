@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {Fragment} from 'react';
+import React, {Fragment, Component} from 'react';
 import {css} from 'styled-components'
 import DropDown from './base'
 const placeHolder = "Hamburger, Asian, Salads..."
@@ -12,17 +12,18 @@ const extraStyle = css`
   }
 `
 
-const CuisineDropDown = ({data, ...props}: any) =>
-  <DropDown {...props}
-            extraStyle={extraStyle}
-            placeholder={placeHolder}
-            options={data.map(cuisine => ({
-            value: cuisine.id,
-            body: <Fragment>
-              <span className="cuisine-icon">{cuisine.icon}</span>
-              {cuisine.name}
-            </Fragment>
-          }))}>
-  </DropDown>
-
-export default CuisineDropDown;
+export default class SpeedDropDown extends Component<any> {
+  render() {
+    return <DropDown {...this.props}
+                     extraStyle={extraStyle}
+                     placeholder={placeHolder}
+                     options={this.props.data.map(cuisine => ({
+                       value: cuisine.id,
+                       body: <Fragment>
+                         <span className="cuisine-icon">{cuisine.icon}</span>
+                         {cuisine.name}
+                       </Fragment>
+                     }))}>
+    </DropDown>
+  }
+}

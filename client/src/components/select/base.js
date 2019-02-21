@@ -16,19 +16,14 @@ const Drop = styled(Select)`
   ${props => props.extraStyle};
 `
 
-class DropDown extends Component<any, any> {
-  render() {
-    const {options} = this.props
-    return (
-      <Drop dropdownClassName="cuisine-drop-down-item"
-            dropdownMatchSelectWidth={true}
-            allowClear={true}
-            {...this.props}
-            size="large"
-            style={{ width: '100%' }}>
-        {options.map(({ value, body }) => <Option value={value}>{body}</Option>)}
-      </Drop>
-    )
-  }
-}
+const DropDown = ({options, ...props}: any) =>
+    <Drop dropdownClassName="cuisine-drop-down-item"
+          dropdownMatchSelectWidth={true}
+          allowClear={true}
+          {...props}
+          size="large"
+          style={{ width: '100%' }}>
+      {options.map(({ value, body }) => <Option key={value} value={value}>{body}</Option>)}
+    </Drop>
+
 export default DropDown;

@@ -7,6 +7,15 @@ import RatingDropDown from "./select/RatingDropDown";
 import styled from 'styled-components'
 import SpeedDropDown from "./select/SpeedDropDown";
 
+type props = {
+  form: any,
+  onSave: Function,
+  data: [],
+  cuisines: {
+    state: any
+  }
+}
+
 const { createFormField } = Form
 const placeHolder = "Choose one..."
 const Flex = styled.div`
@@ -29,7 +38,7 @@ const Flex = styled.div`
   }
 `
 
-class RestaurantForm extends Component<any, any> {
+class RestaurantForm extends Component<props> {
 
   handleSubmit = (e) => {
     e.preventDefault();

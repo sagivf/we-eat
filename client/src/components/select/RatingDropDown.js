@@ -1,6 +1,6 @@
 // @flow strict
 
-import React from 'react'
+import React, {Component} from 'react'
 import {css} from 'styled-components'
 import DropDown from './base'
 import star from "../../style/star.svg"
@@ -15,14 +15,15 @@ const extraStyle = css`
 
 const options = Array.from({length: 5}).map((_, index) => ({
   value: index + 1,
-  body: Array.from({length: index + 1}).map(() => <img alt="" src={star} />)
+  body: Array.from({length: index + 1}).map((_, index) => <img key={index} alt="" src={star} />)
 }))
 
-const RatingDropDown = (props: any) =>
-      <DropDown {...props}
-                placeholder={placeHolder}
-                options={options}
-                extraStyle={extraStyle}>
-      </DropDown>
-
-export default RatingDropDown;
+export default class RatingDropDown extends Component<any> {
+  render() {
+    return <DropDown {...this.props}
+              placeholder={placeHolder}
+              options={options}
+              extraStyle={extraStyle}>
+    </DropDown>
+  }
+}
