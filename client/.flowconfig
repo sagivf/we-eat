@@ -9,3 +9,7 @@
 [options]
 
 [strict]
+
+[untyped]
+# suppresses this issue: https://github.com/PaulLeCam/react-leaflet/issues/364
+.*/node_modules/react-leaflet/.*

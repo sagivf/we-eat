@@ -1,6 +1,8 @@
+// @flow strict
+
 import React from 'react';
 import styled from 'styled-components'
-import {white, red} from "../theme";
+import {white, red} from "../style/theme";
 import star from "../style/star.svg";
 
 const Container = styled.div`
@@ -45,8 +47,18 @@ const Container = styled.div`
 const Name = styled.span`
   margin: 0 0.6rem 0 0;
 `
+type Props = {
+    id: number,
+    name: string,
+    address: string,
+    rating: number,
+    cuisine: {
+      icon: string
+    },
+    onEdit: Function
+}
 
-const Restaurant = ({id, name, address, cuisine: { icon }, rating, onEdit}) =>
+const Restaurant = ({id, name, address, cuisine: { icon }, rating, onEdit}: Props) =>
   <Container>
     <span className="cuisine-icon">{icon}</span>
     <div>

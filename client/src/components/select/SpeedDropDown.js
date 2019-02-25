@@ -1,37 +1,19 @@
-import React, {Component} from 'react';
-import {Select} from "antd";
-import styled from 'styled-components'
+// @flow strict
 
-const { Option } = Select
+import React from 'react'
+import DropDown from './base'
+
 const placeHolder = "How long will it be..."
+const options = [
+  { value: 30, body: "30 Minutes" },
+  { value: 60, body: "1 Hour" },
+  { value: 120, body: "2 Hours" }
+]
 
-const Drop = styled(Select)`
-  .ant-select-selection-selected-value {
-    display: flex !important;
-    width: 100%;
-    justify-content: center;    
-  }
-  
-  .cuisine-icon {
-    font-size: 2rem;
-    margin-right: 1rem;
-  }
-`
+const SpeedDropDown = (props:any) =>
+      <DropDown {...props}
+                placeholder={placeHolder}
+                options={options}>
+      </DropDown>
 
-class SpeedDropDown extends Component {
-  render() {
-    return (
-      <Drop dropdownClassName="cuisine-drop-down-item"
-            dropdownMatchSelectWidth={true}
-            allowClear={true}
-            {...this.props}
-            size="large"
-            style={{ width: '100%' }} placeholder={placeHolder}>
-          <Option value={30}>30 Minutes</Option>
-          <Option value={60}>1 Hour</Option>
-          <Option value={120}>2 Hours</Option>
-      </Drop>
-    )
-  }
-}
 export default SpeedDropDown;

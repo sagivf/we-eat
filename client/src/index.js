@@ -1,5 +1,6 @@
-// import 'mimic';
+// @flow strict
 
+// import 'mimic';
 import React from 'react'
 import { createStore, applyMiddleware } from 'redux'
 import ReactDOM from 'react-dom'
@@ -69,11 +70,14 @@ const ConnectedApp = connect(
   mergeProps
 )(App)
 
-ReactDOM.render(
-  <Provider store={store}>
-    <ConnectedApp />
-  </Provider>,
-document.getElementById('root'));
+
+const root = document.getElementById('root')
+if (root !== null) {
+  ReactDOM.render(
+    <Provider store={store}>
+      <ConnectedApp/>
+    </Provider>, root);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,3 +1,5 @@
+// @flow strict
+
 import React, { Component } from 'react'
 import {Form, Input, Button, Switch} from 'antd';
 import CuisineDropDown from "./select/CuisineDropDown";
@@ -6,9 +8,7 @@ import styled from 'styled-components'
 import SpeedDropDown from "./select/SpeedDropDown";
 
 const { createFormField } = Form
-
 const placeHolder = "Choose one..."
-
 const Flex = styled.div`
   display: flex;
   * {
@@ -29,7 +29,7 @@ const Flex = styled.div`
   }
 `
 
-class RestaurantForm extends Component {
+class RestaurantForm extends Component<any, any> {
 
   handleSubmit = (e) => {
     e.preventDefault();

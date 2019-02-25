@@ -1,3 +1,5 @@
+// @flow strict
+
 import React, {PureComponent}  from 'react'
 import {latLngBounds} from 'leaflet'
 import { Map as LeafLetMap, TileLayer, Marker, Popup } from 'react-leaflet'
@@ -13,7 +15,7 @@ const Container = styled.div`
   }
 `
 
-class Map extends PureComponent {
+class Map extends PureComponent<any, any> {
   state = {
     zoom: 13
   }

@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "moment": "^2.24.0",
     "antd": "^3.13.2",
     "axios": "^0.18.0",
     "flow-bin": "^0.93.0",
