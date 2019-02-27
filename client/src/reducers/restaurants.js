@@ -1,6 +1,7 @@
 // @flow strict
 
 import {RESTAURANTS_ACTION_TYPES} from '../actions/restaurants'
+import {REVIEWS_ACTION_TYPES} from '../actions/reviews'
 import type { Action } from '../actions/restaurants'
 
 type State = {
@@ -15,12 +16,13 @@ export default function restaurants(state: State = {
   const { type, payload } = action
 
   switch (type) {
-    case RESTAURANTS_ACTION_TYPES.ADD_RESTAURANTS_SUCCESS:
+    case RESTAURANTS_ACTION_TYPES.ADD_RESTAURANTS_SUCCESS: {
       state.data.unshift(payload)
       return {
         ...state,
         editing: null
       }
+    }
     case RESTAURANTS_ACTION_TYPES.UPDATE_RESTAURANTS_SUCCESS: {
       if (typeof payload === 'object') {
         const item = state.data.find(({id}) => id === payload.id)
@@ -43,11 +45,22 @@ export default function restaurants(state: State = {
         editing
       }
     }
-    case RESTAURANTS_ACTION_TYPES.FETCH_RESTAURANTS_SUCCESS:
+    case RESTAURANTS_ACTION_TYPES.FETCH_RESTAURANTS_SUCCESS: {
       return {
         ...state,
         data: payload
       }
+    }
+    case REVIEWS_ACTION_TYPES.ADD_REVIEWS_SUCCESS: {
+      console.log(payload)
+      const restaurant = state.data.find(({id}) => id === payload.restaurant_id)
+      if (restaurant) {
+        restaurant.reviews.unshift(payload)
+      }
+      return {
+        ...state
+      }
+    }
     default:
       return state
   }

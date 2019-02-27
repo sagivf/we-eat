@@ -3,8 +3,9 @@
 import * as React from 'react'
 import moment from 'moment'
 import {Button, Input, Modal, Form} from 'antd';
-import RestaurantList from './components/RestaurantList'
-import RestaurantForm from './components/RestaurantForm'
+import RestaurantList from './components/retaurants/RestaurantList'
+import RestaurantForm from './components/retaurants/RestaurantForm'
+import ReviewForm from './components/reviews/ReviewForm'
 import Map from "./components/Map"
 import {
   GlobalStyle, Page, Header, Menu, Main, Footer,
@@ -17,10 +18,12 @@ import weLogo from './style/welogo_white.png'
 
 type Props = {
   restaurants: Object,
-  cuisines: Object
+  cuisines: Object,
+  reviews: Object
 };
 
 type State = {
+  reviewedRestaurant: ?string,
   filters: {}
 };
 
@@ -33,6 +36,7 @@ class App extends React.Component<Props, State> {
   speedDropDownChange: Function;
 
   state = {
+    reviewedRestaurant: null,
     filters: {
       name: null,
       cuisine_id: null,
@@ -47,6 +51,17 @@ class App extends React.Component<Props, State> {
     this.cuisineDropDownChange = this.query.bind(this, 'cuisine_id')
     this.ratingDropDownChange = this.query.bind(this, 'rating')
     this.speedDropDownChange = this.query.bind(this, 'max_delivery_time_minutes')
+  }
+
+  changeReviewedRestaurant = (id: ?string) => {
+    this.setState({
+      reviewedRestaurant: id
+    })
+  }
+
+  saveReview = (data:any) => {
+    this.props.reviews.actions.create(this.state.reviewedRestaurant, data)
+    this.changeReviewedRestaurant(null);
   }
 
   searchChange = (event: any) => {
@@ -83,6 +98,10 @@ class App extends React.Component<Props, State> {
       cuisines
     } = this.props
 
+    const {
+      reviewedRestaurant
+    } = this.state
+
     return (
       <Page>
         <GlobalStyle />
@@ -95,7 +114,7 @@ class App extends React.Component<Props, State> {
             <Button shape="circle" icon="plus" size="large" onClick={this.openRestaurantModal}/>
             <Modal footer={null}
                    onCancel={this.cancelRestaurantModal}
-                   visible={!!restaurants.state.editing}
+                   visible={restaurants.state.editing}
                    title="Add Restaurant">
               <RestaurantForm cuisines={cuisines}
                               data={restaurants.state.editing}
@@ -114,9 +133,16 @@ class App extends React.Component<Props, State> {
           </Form.Item>
         </Filters>
         <Menu>
-            <RestaurantList data={restaurants.state.data}
-                            onEdit={restaurants.actions.changeEditing}
-                            fetch={restaurants.actions.fetch}  />
+          <RestaurantList data={restaurants.state.data}
+                          onCreateReview={this.changeReviewedRestaurant}
+                          onEdit={restaurants.actions.changeEditing}
+                          fetch={restaurants.actions.fetch}  />
+          <Modal footer={null}
+                 visible={reviewedRestaurant}
+                 onCancel={() => this.changeReviewedRestaurant(null)}
+                 title="Add Review">
+            <ReviewForm onSave={this.saveReview} />
+          </Modal>
         </Menu>
         <Main>
           <Map data={restaurants.state.data} />

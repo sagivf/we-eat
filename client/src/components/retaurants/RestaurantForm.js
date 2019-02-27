@@ -1,11 +1,11 @@
 // @flow strict
 
 import React, { Component } from 'react'
-import {Form, Input, Button, Switch} from 'antd';
-import CuisineDropDown from "./select/CuisineDropDown";
-import RatingDropDown from "./select/RatingDropDown";
 import styled from 'styled-components'
-import SpeedDropDown from "./select/SpeedDropDown";
+import {Form, Input, Button, Switch} from 'antd'
+import CuisineDropDown from "../select/CuisineDropDown"
+import RatingDropDown from "../select/RatingDropDown"
+import SpeedDropDown from "../select/SpeedDropDown"
 
 type props = {
   form: any,

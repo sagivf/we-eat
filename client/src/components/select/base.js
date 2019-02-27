@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {Component} from 'react';
+import React from 'react';
 import {Select} from "antd";
 import styled from 'styled-components'
 

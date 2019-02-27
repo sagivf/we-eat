@@ -16,9 +16,14 @@ import {
   update as updateRestaurants,
   changeEdit as changeRestaurantsEdit
 } from './actions/restaurants'
+
 import {
   fetch as fetchCuisines
 } from './actions/cuisines'
+
+import {
+  add as addReview
+} from './actions/reviews'
 
 const store = createStore(
   app,
@@ -42,6 +47,9 @@ const mapDispatchToProps = dispatch => {
     },
     cuisines: {
       fetch: () => dispatch(fetchCuisines())
+    },
+    reviews: {
+      create: (restaurantId, data) => dispatch(addReview(restaurantId, data))
     }
   }
 }
@@ -61,6 +69,9 @@ const mergeProps = (state, dispatch) => ({
   cuisines: {
     actions: dispatch.cuisines,
     state: state.cuisines
+  },
+  reviews: {
+    actions: dispatch.reviews
   }
 })
 
