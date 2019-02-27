@@ -1,8 +1,8 @@
 // @flow strict
 
 import React  from 'react'
-import star from "../style/star.svg";
-import styled from "styled-components";
+import star from '../style/star.svg'
+import styled from 'styled-components'
 
 
 const Img = styled.img`
@@ -10,7 +10,11 @@ const Img = styled.img`
   height: 2rem;
 `
 
-const Stars = ({count}) => {
+type Props = {
+  count: number
+}
+
+const Stars = ({count}: Props) : Array<Img> => {
   return Array.from({length: count}).map((_, index) => <Img key={index} alt="" src={star}/>)
 }
 

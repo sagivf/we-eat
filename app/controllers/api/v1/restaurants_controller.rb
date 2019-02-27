@@ -11,7 +11,12 @@ module Api::V1
       if (params.has_key? :name)
         @restaurants = @restaurants.where("name like ?", "%#{params[:name]}%")
       end
-      @restaurants = @restaurants.where(params.permit(:cuisine_id, :rating))
+      @restaurants = @restaurants.where(params.permit(:cuisine_id))
+
+      if (params.has_key? :rating)
+        @restaurants = @restaurants.select{|item| item.rating >= params[:rating].to_i}
+      end
+
       render json: @restaurants, each_serializer: RestaurantSerializer
     end
 

@@ -6,10 +6,6 @@ class Restaurant < ApplicationRecord
   validates :address, presence: true
 
   def rating
-    if reviews.present?
-      reviews.average(:rating).round
-    else
-      0
-    end
+    reviews.present? ? reviews.average(:rating).round : 0
   end
 end

@@ -52,10 +52,11 @@ export default function restaurants(state: State = {
       }
     }
     case REVIEWS_ACTION_TYPES.ADD_REVIEWS_SUCCESS: {
-      console.log(payload)
-      const restaurant = state.data.find(({id}) => id === payload.restaurant_id)
-      if (restaurant) {
-        restaurant.reviews.unshift(payload)
+      if (typeof payload === 'object') {
+        const restaurant = state.data.find(({id}) => id === payload.restaurant_id)
+        if (restaurant) {
+          restaurant.reviews.unshift(payload)
+        }
       }
       return {
         ...state

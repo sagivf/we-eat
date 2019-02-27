@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import {Icon} from 'antd';
 import styled from 'styled-components'
 import {white, red} from "../../style/theme";
@@ -73,6 +73,8 @@ type Props = {
     name: string,
     address: string,
     rating: number,
+    max_delivery_time_minutes: number,
+    accepts_10bis: number,
     cuisine: {
       icon: string
     },
@@ -85,7 +87,8 @@ const Restaurant = ({id, name, address, accepts_10bis, max_delivery_time_minutes
     const [showReviews, setShowReviews] = useState(false);
 
 
-    const elements = [<Container>
+    return <Fragment>
+        <Container>
         <span className="cuisine-icon">{icon}</span>
         <div className="flex-1">
             <h3 onClick={() => onEdit(id)}>
@@ -100,14 +103,10 @@ const Restaurant = ({id, name, address, accepts_10bis, max_delivery_time_minutes
         </div>
         <ReviewsLink type={showReviews ? 'up' : 'down'}
                      onClick={() => setShowReviews(!showReviews)}>Reviews</ReviewsLink>
-    </Container>]
-
-    if (showReviews) {
-        elements.push(<Reviews data={reviews}
-                               onCreate={data => onCreateReview(id, data)}/>)
-    }
-
-    return elements
+    </Container>
+        {showReviews && <Reviews data={reviews}
+                                 onCreate={data => onCreateReview(id, data)}/>}
+    </Fragment>
 }
 
 export default Restaurant;

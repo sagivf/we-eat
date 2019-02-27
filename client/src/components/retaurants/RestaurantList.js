@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import Restaurant from "./Resturant";
 
 class RestaurantList extends Component<any, any> {
@@ -9,13 +9,9 @@ class RestaurantList extends Component<any, any> {
   }
   render() {
     const { data, onEdit, onCreateReview } = this.props
-    return (
-      <Fragment>
-        {data.map((restaurant, index) => <Restaurant key={index} {...restaurant}
+    return data.map(restaurant => <Restaurant key={restaurant.id} {...restaurant}
                                                      onCreateReview={onCreateReview}
-                                                     onEdit={onEdit}/>)}
-      </Fragment>
-    )
+                                                     onEdit={onEdit}/>)
   }
 }
 export default RestaurantList;
