@@ -15,6 +15,8 @@ const H3 = styled.h3`
 const List = styled.ul`
   list-style: none;
   background: white;
+  margin: 0;
+  padding: 0;
 `
 
 const Container = styled.div`
