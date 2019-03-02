@@ -37,9 +37,9 @@ const Item = styled.li`
   align-items: center;
   margin: 1.4rem 0;
   
-  h5 {
-    font-size: 1.2rem;
-    margin: 0 2rem 0;
+  h2 {
+    font-size: 1rem;
+    margin: 0 2rem 0 0;
     flex: 0 0 5rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -65,7 +65,7 @@ const Reviews = ({data, onCreate}: props) => {
         <H3>Reviews</H3>
         <List>
             {data.map(({id, name, comment, rating}) => <Item key={id}>
-                <h5>{name}</h5>
+                <h2>{name}</h2>
                 <p>
                     <div>{comment}</div>
                     <Stars count={rating} />
