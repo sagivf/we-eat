@@ -8,10 +8,11 @@ class RestaurantList extends Component<any, any> {
     this.props.fetch()
   }
   render() {
-    const { data, onEdit, onCreateReview } = this.props
+    const { data, onEdit, onCreateReview, onRestaurantHover} = this.props
     return data.map(restaurant => <Restaurant key={restaurant.id} {...restaurant}
-                                                     onCreateReview={onCreateReview}
-                                                     onEdit={onEdit}/>)
+                                              onRestaurantHover={onRestaurantHover}
+                                              onCreateReview={onCreateReview}
+                                              onEdit={onEdit}/>)
   }
 }
 export default RestaurantList;

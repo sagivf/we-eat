@@ -23,6 +23,7 @@ type Props = {
 };
 
 type State = {
+  activeRestaurant: ?string,
   reviewedRestaurant: ?string,
   filters: {}
 };
@@ -36,6 +37,7 @@ class App extends React.Component<Props, State> {
   speedDropDownChange: Function;
 
   state = {
+    activeRestaurant: null,
     reviewedRestaurant: null,
     filters: {
       name: null,
@@ -80,6 +82,12 @@ class App extends React.Component<Props, State> {
     this.props.restaurants.actions.changeEditing(null)
   }
 
+  onRestaurantHover = (id: string) => {
+    this.setState({
+      activeRestaurant: id
+    })
+  }
+
   query (type: string, value: any) {
     this.setState(({filters, ...state}) => ({
       ...state,
@@ -99,7 +107,8 @@ class App extends React.Component<Props, State> {
     } = this.props
 
     const {
-      reviewedRestaurant
+      activeRestaurant,
+      reviewedRestaurant = ''
     } = this.state
 
     return (
@@ -134,6 +143,7 @@ class App extends React.Component<Props, State> {
         </Filters>
         <Menu>
           <RestaurantList data={restaurants.state.data}
+                          onRestaurantHover={this.onRestaurantHover}
                           onCreateReview={this.changeReviewedRestaurant}
                           onEdit={restaurants.actions.changeEditing}
                           fetch={restaurants.actions.fetch}  />
@@ -145,7 +155,8 @@ class App extends React.Component<Props, State> {
           </Modal>
         </Menu>
         <Main>
-          <Map data={restaurants.state.data} />
+          <Map data={restaurants.state.data}
+               activeRestaurant={activeRestaurant}/>
         </Main>
         <Footer>
           <span>© 2010–2019 WeWork Inc.</span>

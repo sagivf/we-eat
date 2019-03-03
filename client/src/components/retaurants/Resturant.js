@@ -80,15 +80,16 @@ type Props = {
     },
     reviews: Array<any>,
     onEdit: Function,
-    onCreateReview: Function
+    onCreateReview: Function,
+    onRestaurantHover: Function
 }
 
-const Restaurant = ({id, name, address, accepts_10bis, max_delivery_time_minutes, cuisine: { icon }, rating, reviews = [], onEdit, onCreateReview}: Props) => {
+const Restaurant = ({id, name, address, accepts_10bis, max_delivery_time_minutes, cuisine: { icon }, rating, reviews = [], onEdit, onCreateReview, onRestaurantHover}: Props) => {
     const [showReviews, setShowReviews] = useState(false);
 
 
     return <Fragment>
-        <Container>
+        <Container onMouseEnter={()=> onRestaurantHover(id)}>
         <span className="cuisine-icon">{icon}</span>
         <div className="flex-1">
             <h3 onClick={() => onEdit(id)}>
