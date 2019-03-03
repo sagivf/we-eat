@@ -112,6 +112,7 @@ class App extends React.Component<Props, State> {
     } = this.state
 
     const restaurant = restaurants.state.data.find(({id}) => id === reviewedRestaurant)
+    const reviewTitle = `Add Review - ${restaurant && restaurant.name}`;
 
     return (
       <Page>
@@ -152,7 +153,7 @@ class App extends React.Component<Props, State> {
           <Modal footer={null}
                  visible={reviewedRestaurant}
                  onCancel={() => this.changeReviewedRestaurant(null)}
-                 title={`Add Review - ${restaurant && restaurant.name}`}>
+                 title={reviewTitle}>
             <ReviewForm onSave={this.saveReview} />
           </Modal>
         </Menu>

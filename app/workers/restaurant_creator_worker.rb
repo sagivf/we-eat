@@ -3,11 +3,7 @@ require_relative '../../lib/zomato'
 class RestaurantCreatorWorker
   include Sidekiq::Worker
 
-  def perform(*args)
-    city_id = args[0]
-    start = args[1]
-    count = args[2]
-    review_count = args[3]
+  def perform(city_id = 280, start = 50, count = 10, review_count = 3)
     Zomato.new(city_id).createRestaurants(start, count, review_count)
   end
 end

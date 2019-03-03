@@ -8,6 +8,7 @@ namespace :zomato do
 
   desc 'Load Restaurants'
   task :restaurants, [:city_id, :from, :to, :count, :review_count] => :environment do |task, args|
+    args.with_defaults(:city_id => 280, :from => 50, :to => 100, :count => 10, :review_count => 3)
     start = args[:from].to_i
     to = args[:to].to_i
     count = args[:count].to_i
