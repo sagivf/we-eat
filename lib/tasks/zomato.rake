@@ -14,9 +14,8 @@ namespace :zomato do
     count = args[:count].to_i
     review_count = args[:review_count].to_i
     city_id = args[:city_id].to_i
-    while start < to
-      RestaurantCreatorWorker.perform_in(1.minutes, city_id, start, count, review_count)
-      start = start + count
-    end
+    (start..to-1).step(count) {|start|
+      RestaurantCreatorWorker.perform_async(city_id, start, count, review_count)
+    }
   end
 end

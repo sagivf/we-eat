@@ -18,15 +18,13 @@ class Zomato
       request.add_field("user-key", $key)
       request.add_field("accept", "application/json")
       response = http.request request # Net::HTTPResponse object
-      if !response.is_a?(Net::HTTPSuccess)
-        puts "Failed status: #{response.code}"
-        return
-      end
+      return puts "Failed status: #{response.code}" unless response.is_a?(Net::HTTPSuccess)
 
-      JSON.parse(response.body)['cuisines'].each do |a|
+      JSON.parse(response.body)['cuisines'].each do |cuisine|
+        cuisine = cuisine['cuisine']
         Cuisine.create!({
-                            id: a['cuisine']['cuisine_id'],
-                            name: a['cuisine']['cuisine_name'],
+                            id: cuisine['cuisine_id'],
+                            name: cuisine['cuisine_name'],
                             icon: charset.sample
                         })
       end
@@ -34,9 +32,6 @@ class Zomato
   end
 
   def createRestaurants(start, count, review_count)
-    puts start
-    puts count
-    puts review_count
     cuisines = Cuisine.all
     uri = URI("#{$base_url}/search?entity_id=#{@city_id}&entity_type=city&start=#{start}&count=#{count}")
 
@@ -45,23 +40,21 @@ class Zomato
       request.add_field("user-key", $key)
       request.add_field("accept", "application/json")
       response = http.request request
-      if !response.is_a?(Net::HTTPSuccess)
-        puts "Failed status: #{response.code}"
-        return
-      end
+      return puts "Failed status: #{response.code}" unless response.is_a?(Net::HTTPSuccess)
 
       puts response.body
-      JSON.parse(response.body)['restaurants'].each do |a|
-        res_id = a['restaurant']['id']
-        cuisine = a['restaurant']['cuisines'].split(',').collect {|x| x.strip || x}[0]
+      JSON.parse(response.body)['restaurants'].each do |restaurant|
+        restaurant = restaurant['restaurant']
+        res_id = restaurant['id']
+        cuisine = restaurant['cuisines'].split(',').collect(String::strip)[0]
         begin
           Restaurant.create!({
                                  id: res_id,
-                                 name: a['restaurant']['name'],
+                                 name: restaurant['name'],
                                  cuisine_id: cuisines.detect {|c| c['name'] == cuisine}['id'],
-                                 address: a['restaurant']['location']['address'],
-                                 lat: a['restaurant']['location']['latitude'],
-                                 lng: a['restaurant']['location']['longitude'],
+                                 address: restaurant['location']['address'],
+                                 lat: restaurant['location']['latitude'],
+                                 lng: restaurant['location']['longitude'],
                                  max_delivery_time_minutes: rand(1..120),
                                  accepts_10bis: [true, false].sample
                              })
@@ -71,18 +64,17 @@ class Zomato
             request.add_field("user-key", $key)
             request.add_field("accept", "application/json")
             response = http.request request
-            if !response.is_a?(Net::HTTPSuccess)
-              puts "Failed status: #{response.code}"
-              return
-            end
+            return puts "Failed status: #{response.code}" unless response.is_a?(Net::HTTPSuccess)
+
             begin
               JSON.parse(response.body)['user_reviews'].each do |review|
+                review = review['review']
                 Review.create!({
-                                   id: review['review']['id'],
-                                   name: review['review']['user']['name'],
+                                   id: review['id'],
+                                   name: review['user']['name'],
                                    restaurant_id: res_id,
-                                   rating: review['review']['rating'],
-                                   comment: review['review']['review_text']
+                                   rating: review['rating'],
+                                   comment: review['review_text']
                                })
               end
             rescue Exception => e
