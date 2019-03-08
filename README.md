@@ -3,6 +3,9 @@
 - https://we-eat-daily.herokuapp.com
 - https://we-eat-daily.herokuapp.com/sidekiq
 
+- add .env for zomato 
+ZOMATO_API_KEY=64051c9e2b0354b2938b32fcf4cd8fb2
+
 - Create restaurants `heroku run rake "zomato:restaurants[280,10,30,10,5]"`
 
 
