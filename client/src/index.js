@@ -1,6 +1,7 @@
 // @flow strict
 
 // import 'mimic';
+// import connectMimc from 'mimic/remote';
 import React from 'react'
 import { createStore, applyMiddleware } from 'redux'
 import ReactDOM from 'react-dom'
@@ -24,6 +25,8 @@ import {
 import {
   add as addReview
 } from './actions/reviews'
+
+// connectMimc()
 
 const store = createStore(
   app,

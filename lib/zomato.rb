@@ -96,11 +96,11 @@ class Zomato
                                    comment: review['review_text']
                                })
               end
-            rescue Exception => e
+            rescue => e
               puts e
             end
           end
-        rescue Exception => e
+        rescue => e
           puts e
         end
       end
