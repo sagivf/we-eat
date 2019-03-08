@@ -3,6 +3,7 @@ require_relative '../zomato'
 namespace :zomato do
   desc 'Load cuisines'
   task :cuisines, [:city_id]  => :environment do |task, args|
+    args.with_defaults(:city_id => 280)
     Zomato.new(args[:city_id].to_i).createCuisines
   end
 
@@ -15,6 +16,7 @@ namespace :zomato do
     review_count = args[:review_count].to_i
     city_id = args[:city_id].to_i
     (start..to-1).step(count) {|start|
+      # Zomato.new(args[:city_id].to_i).createRestaurants(start, count, review_count)
       RestaurantCreatorWorker.perform_async(city_id, start, count, review_count)
     }
   end

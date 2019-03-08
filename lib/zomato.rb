@@ -1,7 +1,8 @@
 require 'net/http'
 
 $key = ENV['ZOMATO_API_KEY']
-$base_url = 'https://developers.zomato.com/api/v2.1'
+$domain = 'developers.zomato.com'
+$base_path = '/api/v2.1'
 
 class Zomato
 
@@ -11,9 +12,12 @@ class Zomato
 
   def createCuisines
     charset = Array(1..9) + Array('a'..'z')
-    uri = URI("#{$base_url}/cuisines?city_id=#{@city_id}")
+    uri = URI::HTTPS.build({:use_ssl => true,
+                            :host => $domain,
+                            :path => "#{$base_path}/cuisines",
+                            :query => {:city_id => @city_id}.to_query})
 
-    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+    Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
       request = Net::HTTP::Get.new uri
       request.add_field("user-key", $key)
       request.add_field("accept", "application/json")
@@ -33,20 +37,28 @@ class Zomato
 
   def createRestaurants(start, count, review_count)
     cuisines = Cuisine.all
-    uri = URI("#{$base_url}/search?entity_id=#{@city_id}&entity_type=city&start=#{start}&count=#{count}")
+    uri = URI::HTTPS.build({:use_ssl => true,
+                            :host => $domain,
+                            :path => "#{$base_path}/search",
+                            :query => {
+                                :entity_id => @city_id,
+                                :entity_type => 'city',
+                                :start => start,
+                                :count => count
+                            }.to_query})
 
-    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+    puts uri
+    Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
       request = Net::HTTP::Get.new uri
       request.add_field("user-key", $key)
       request.add_field("accept", "application/json")
       response = http.request request
       return puts "Failed status: #{response.code}" unless response.is_a?(Net::HTTPSuccess)
 
-      puts response.body
       JSON.parse(response.body)['restaurants'].each do |restaurant|
         restaurant = restaurant['restaurant']
         res_id = restaurant['id']
-        cuisine = restaurant['cuisines'].split(',').collect(String::strip)[0]
+        cuisine = restaurant['cuisines'].split(',').collect(&:strip)[0]
         begin
           Restaurant.create!({
                                  id: res_id,
@@ -58,8 +70,15 @@ class Zomato
                                  max_delivery_time_minutes: rand(1..120),
                                  accepts_10bis: [true, false].sample
                              })
-          uri = URI("#{$base_url}/reviews?res_id=#{res_id}&count=#{review_count}")
-          Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+          uri = URI::HTTPS.build({:use_ssl => true,
+                                  :host => $domain,
+                                  :path => "#{$base_path}/reviews",
+                                  :query => {
+                                      :res_id => res_id,
+                                      :count => review_count
+                                  }.to_query})
+
+          Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
             request = Net::HTTP::Get.new uri
             request.add_field("user-key", $key)
             request.add_field("accept", "application/json")
