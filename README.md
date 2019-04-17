@@ -3,19 +3,19 @@
 - https://we-eat-daily.herokuapp.com
 - https://we-eat-daily.herokuapp.com/sidekiq
 
-- add .env for zomato 
-ZOMATO_API_KEY=
 
+## Commands
+- Run client and server - `rake start`
 - Create restaurants `heroku run rake "zomato:restaurants[280,10,30,10,5]"`
+- Run rails `rails s -p 3001`
 
+## Setup
+- add .env for zomato `ZOMATO_API_KEY=`
 
 ---
 
 - Create api server `rails new . --api --database=postgresql -T --no-rdoc --no-ri`
-
 - Create client side app `npx create-react-app client`
-
-- Run rails `rails s -p 3001`
 
 - Seed data
 `
@@ -29,10 +29,7 @@ copy(JSON.stringify(x.map(({ coordinates, name, address, max_delivery_time, acce
 }))))
 `
 
-- run client and server - `rake start`
-
-
-## deploy
+## Deploy
 - `npm run build`
 - `npm run deploy`
 - `git push heroku master`
