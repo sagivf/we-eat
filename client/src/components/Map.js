@@ -47,7 +47,7 @@ class Map extends PureComponent<any, any> {
     const {data, activeRestaurant} = this.props
     const bounds = this.calcBounds()
     let center = null
-    if (activeRestaurant) {
+    if (data && data.length && activeRestaurant) {
       const restaurant = data.find(({id}) => id === activeRestaurant)
       center = [restaurant.lat, restaurant.lng]
     }

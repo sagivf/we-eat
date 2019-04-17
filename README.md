@@ -32,3 +32,6 @@ copy(JSON.stringify(x.map(({ coordinates, name, address, max_delivery_time, acce
 - run client and server - `rake start`
 
 
+## deploy
+- `git push heroku master`
+
