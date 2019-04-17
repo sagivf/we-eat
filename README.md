@@ -4,7 +4,7 @@
 - https://we-eat-daily.herokuapp.com/sidekiq
 
 - add .env for zomato 
-ZOMATO_API_KEY=64051c9e2b0354b2938b32fcf4cd8fb2
+ZOMATO_API_KEY=
 
 - Create restaurants `heroku run rake "zomato:restaurants[280,10,30,10,5]"`
 
@@ -33,5 +33,7 @@ copy(JSON.stringify(x.map(({ coordinates, name, address, max_delivery_time, acce
 
 
 ## deploy
+- `npm run build`
+- `npm run deploy`
 - `git push heroku master`
 
